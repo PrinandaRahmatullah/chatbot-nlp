@@ -539,7 +539,7 @@ input {
 	border: 1px solid #e0e0e0;
 }
 
-.chat_form .message_form textarea {
+.chat_form .message_form input {
 	margin: 5px 0 5px 0;
 	border: 1px solid #e0e0e0;
 	position: relative;

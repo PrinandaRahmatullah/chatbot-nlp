@@ -28,18 +28,16 @@
           </div>
           Hey there! Any question?
         </span>
+
         <span class="chat_msg_item chat_msg_item_user"> Hello!</span>
-        <!-- <div class="status">20m ago</div> -->
+
         <span class="chat_msg_item chat_msg_item_admin">
           <div class="chat_avatar">
             <img src="../assets/chatbots-logo.png" />
           </div>
           Hey! Would you like to talk sales, support, or anyone?
         </span>
-        <span class="chat_msg_item chat_msg_item_user">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.</span
-        >
+
         <span class="chat_msg_item chat_msg_item_admin">
           <div class="chat_avatar">
             <img src="../assets/chatbots-logo.png" />
@@ -61,27 +59,35 @@
         <span class="chat_msg_item chat_msg_item_user">
           There are many variations of passages of Lorem Ipsum available</span
         >
-        <div class="status2">Just now, Not seen yet</div>
+        <!-- <div class="status2">Just now, Not seen yet</div> -->
       </div>
+
+      <!-- Kirim PEsan -->
       <div class="fab_field">
-        <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
-        <textarea
+        <!-- INput text -->
+        <input
+          type="text"
           id="chatSend"
           name="chat_message"
           placeholder="Send a message"
           class="chat_field chat_message"
-        ></textarea>
+        ></input>
+
+        <!-- Tombol kirim -->
+        <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
       </div>
     </div>
+
+    <!-- Tombol/Logo Bot -->
     <a id="prime" class="fab"><i class="prime zmdi zmdi-comments" actio></i></a>
   </div>
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  <script src="index.js"></script>
-  <!-- <script src="app.js"></script> -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script
     src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
     integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I="
     crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
+  <!-- <script src="app.js"></script> -->
 </body>

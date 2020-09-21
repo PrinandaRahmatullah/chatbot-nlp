@@ -17,13 +17,36 @@ function toggleFab() {
 
 }
 
-// Connext to socker
+
+
+
+// Connext to socket
 var socket = io();
 socket.on("connect", function () {
-    socket.emit("send message", {
-        message: "I'm connected!"
-    }); // message yg user input
+
+    var sendButton = $("#fab_send")
+    var chatbotInput = $("#chatSend")
+
+    // if ($.trim(chatbotInput.val()) != "") {}
+    chatbotInput.keypress(function (event) {
+        var keycode = event.which;
+        if (keycode == 13) {
+            sendButton.click()
+        }
+    });
+
+    sendButton.click(function () {
+        // message yg user input
+        socket.emit("send message", {
+            "input_message": chatbotInput.val()
+        });
+        chatbotInput.val("");
+    });
+
+
+    // listen event from server
     socket.on("response message", (data) => {
         console.log(data);
-    }); // listen event from server
+    });
+
 });

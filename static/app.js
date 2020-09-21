@@ -1,7 +1,7 @@
-const submitButton = document.getElementById("fab_send");
+const sendButton = document.getElementById("fab_send");
 const chatbotInput = document.getElementById("chatSend");
 
-submitButton.onclick = userSubmitEventHandler;
+sendButton.onclick = userSubmitEventHandler;
 chatbotInput.onkeyup = userSubmitEventHandler;
 
 function userSubmitEventHandler(event) {
