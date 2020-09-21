@@ -1,4 +1,3 @@
-from tkinter import *
 import tkinter
 import json
 import pickle
@@ -13,8 +12,6 @@ from keras.layers import Dense, Activation, Dropout
 from keras.optimizers import SGD
 
 nltk.download('punkt')
-# nltk.download('wordnet')
-
 
 # Load file
 words = []
@@ -41,10 +38,6 @@ for intent in intents['intents']:
             classes.append(intent['tag'])
 
 
-# lemmatization, case folding, and remove duplicate
-# lemmatizer = WordNetLemmatizer()
-
-# words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in string.punctuation]
 words = [w.lower() for w in words if w not in string.punctuation]
 words = sorted(list(set(words)))
 
@@ -58,9 +51,8 @@ print(len(classes), "classes")
 pickle.dump(words, open('model/words.pkl', 'wb'))
 pickle.dump(classes, open('model/classes.pkl', 'wb'))
 
-# Create Data Training and Testing
 
-# create our training data
+# Create Data Training and Testing
 training = []
 # create an empty array for our output
 output_empty = [0] * len(classes)
@@ -72,7 +64,6 @@ for doc in documents:
     # list of tokenized words for the pattern
     pattern_words = doc[0]
     # lemmatize each word - create base word, in attempt to represent related words
-    # pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
     pattern_words = [word.lower() for word in pattern_words]
 
     # create our bag of words array with 1, if word match found in current pattern
