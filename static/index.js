@@ -37,16 +37,16 @@ socket.on("connect", function () {
 
     sendButton.click(function () {
         // message yg user input
-        socket.emit("send message", {
-            "input_message": chatbotInput.val()
-        });
+        socket.emit("send message", chatbotInput.val());
+        $("div#chat_fullscreen").append('<span class="chat_msg_item chat_msg_item_user">' + chatbotInput.val() + '</span>')
         chatbotInput.val("");
     });
 
 
     // listen event from server
     socket.on("response message", (data) => {
-        console.log(data);
+        // console.log(data);
+        $("div#chat_fullscreen").append('<span class="chat_msg_item chat_msg_item_admin"><div class="chat_avatar"><img src="../assets/chatbots-logo.png"/></div>' + data + '</span>')
     });
 
 });
