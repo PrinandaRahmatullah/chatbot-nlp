@@ -170,7 +170,7 @@
         {
             "tag": "website_scbna",
             "patterns": ["Website Smart City Banda Aceh", "Situs web Smart city Bna", "Websitenya ada?", "Mau tau websitenya"],
-            "responses": ["Silahkan akses ke https://smartcity.bandaacehkota.go.id"],
+            "responses": ["Silahkan akses ke <a href='https://smartcity.bandaacehkota.go.id' target='_blank'>https://smartcity.bandaacehkota.go.id</a>"],
             "context": [""]
         },
         {

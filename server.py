@@ -4,10 +4,11 @@ import string
 import numpy as np
 import random
 import nltk
+import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 from flask_socketio import SocketIO, emit, send
-from keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential, load_model
 
 intents = json.loads(open('dataset/pola.json').read())
 model = load_model('model/model.h5')
@@ -36,7 +37,7 @@ def bow(sentence, words, show_details=True):
     return(np.array(bag))
 
 
-# Fungsi untuk membaca kelas dan memberikan list dari respon
+# # Fungsi untuk membaca kelas dan memberikan list dari respon
 def predict_class(sentence, model):
     # filter out predictions below a threshold
     p = bow(sentence, words, show_details=False)
@@ -48,8 +49,7 @@ def predict_class(sentence, model):
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
-        return_list.append(
-            {"intent": classes[r[0]], "probability": str(r[1])})
+        return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
 
@@ -64,16 +64,11 @@ def getResponse(ints, intents_json):
     return result
 
 
-# Fungsi untuk menampilkan respon dari chatbot
+# # Fungsi untuk menampilkan respon dari chatbot
 def chatbot_response(text):
     ints = predict_class(text, model)
     res = getResponse(ints, intents)
     return res
-
-
-# # Fungsi dummy
-# def chatbot_response(text):
-#     return text
 
 
 # Web Framework = Flask
@@ -93,11 +88,14 @@ def sessions():
     return render_template('index.html')
 
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico')
+
+
 @socketio.on('send message')
 def handle_my_custom_event(data):
-    # print(str(data))
-
-    teks = chatbot_response(str(data))
-
-    print("Server menerima input : " + teks)
-    # emit('response message', chatbot_response(str(data) + "out"))
+    resp = chatbot_response(str(data))
+    print("Server menerima input : " + str(data) +
+          " resp : " + resp)
+    emit('response message', resp)
