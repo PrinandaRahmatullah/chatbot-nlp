@@ -48,8 +48,8 @@ print(len(documents), "documents")
 print(len(classes), "classes")
 
 # Save to file in binary
-pickle.dump(words, open('model/words.pkl', 'wb'))
-pickle.dump(classes, open('model/classes.pkl', 'wb'))
+pickle.dump(words, open('model/indo_words.pkl', 'wb'))
+pickle.dump(classes, open('model/indo_classes.pkl', 'wb'))
 
 
 # Create Data Training and Testing
@@ -105,5 +105,5 @@ model.compile(loss='categorical_crossentropy',
 # fitting and saving the model
 hist = model.fit(np.array(train_x), np.array(train_y),
                  epochs=200, batch_size=5, verbose=1)
-model.save('model/chatbot_model.h5', hist)
+model.save('model/model.h5', hist)
 print("model created")
