@@ -1,0 +1,82 @@
+{
+    "intents": [{
+            "tag": "web_diskominfotik_bna",
+            "patterns": ["Situs Web Kominfo", "Website Diskominfotik", "Web Diskominfotik", "Web kominfo"],
+            "responses": ["Silahkan akses ke situs <a href='http://diskominfo.bandaacehkota.go.id/' target='_blank'>http://diskominfo.bandaacehkota.go.id/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "aduan_konten_neg",
+            "patterns": ["Aduan Konten Negatif", "Saya ingin mengadu konten negatif", "konten buruk porno dan sebagainya"],
+            "responses": ["Silahkan Anda mengadu terhadap konten negatif yang Anda temui ke Situs berikut <a href='https://aduankonten.id/' target='_blank'>https://aduankonten.id/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "ppid_bna",
+            "patterns": ["Pejabat Pengelola Informasi dan Dokumentasi", "PPID"],
+            "responses": ["Informasi lebih lanjut mengenai PPID Kota Banda Aceh dapat diakses melalui <a href='http://ppid.bandaacehkota.go.id/' target='_blank'>http://ppid.bandaacehkota.go.id/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "lpse_bna",
+            "patterns": ["Layanan Pengadaan Secara Elektronik Banda Aceh", "Saya ingin melakukan tender", "Pengadaan Barang Pemerintah"],
+            "responses": ["Tender Barang Pemerintah melalui LPSE dapat diakses di <a href='https://lpse.bandaacehkota.go.id/eproc4/' target='_blank'>https://lpse.bandaacehkota.go.id/eproc4/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "jdih_bna",
+            "patterns": ["Jaringan Dokumentasi dan Informasi Hukum Pemerintah Kota Banda Aceh", "JDIH Banda Aceh"],
+            "responses": ["Informasi tentang JDIH Kota Banda Aceh dapat Anda temui di situs berikut <a href='http://jdih.bandaacehkota.go.id/' target='_blank'>http://jdih.bandaacehkota.go.id/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "cp_kominfotik_bna",
+            "patterns": ["Contact Person Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh", "Hubungi Diskominfotik Banda Aceh", "Telepon Diskominfotik", "Email Diskominfotik", "Alamat Diskominfotik Banda Aceh"],
+            "responses": ["Hubungi Diskominfotik Banda Aceh melalui :\nTelepon : (0651) 7551641\nFax : (0651) 7557269\nEmail : diskominfotik@bandaacehkota.go.id\ndan Alamat : Jl. T. Nyak Arief No. 130 Banda Aceh, 23115"],
+            "context": [""]
+        },
+        {
+            "tag": "forum_diskusi",
+            "patterns": ["Forum Diskusi Diskominfotik Kota Banda Aceh", "Tanya Jawab Diskominfotik"],
+            "responses": ["Silahkan berdiskusi melalui <a href='http://diskominfo.bandaacehkota.go.id/forum-diskusi/' target='_blank'>http://diskominfo.bandaacehkota.go.id/forum-diskusi/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "domain_hosting",
+            "patterns": ["Permohonan Hosting dan Subdomain", "Saya ingin memohon hosting", "Prosedur hosting dan subdomain", "Reset password hosting"],
+            "responses": ["Informasi tentang prosedur Hosting dan Domain dapat dibaca di <a href='http://diskominfo.bandaacehkota.go.id/permohonan-hosting-dan-subdomain/' target='_blank'>http://diskominfo.bandaacehkota.go.id/permohonan-hosting-dan-subdomain/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "peta_jaringan_fo_bna",
+            "patterns": ["Peta Jaringan Telekomunikasi Fiber Optik Banda Aceh", "Peta FO Banda Aceh", "Jaringan FO Banda Aceh"],
+            "responses": ["Peta Jaringan FO terakhir dapat dilihat di <a href='http://diskominfo.bandaacehkota.go.id/peta-jaringan-fo/' target='_blank'>http://diskominfo.bandaacehkota.go.id/peta-jaringan-fo/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "donwload_dokumen",
+            "patterns": ["Saya memerlukan Dokumen Peraturan Walikota", "Dokumen Renstra Sekretariat Kota Banda Aceh", "Dokumen Restra Diskominfotik Banda Aceh", "Dokumen Kerangka Acuan Kerja", "Dokumen Lakip", "Dokumen Bahan Sakip", "Dokumen Bidang E-Government", "Dokumen Bidang Hubungan Media dan Penyelenggaraan Smart City", "Dokumen Bidang Pengelolaan Informasi Publik", "Dokumen Bidang Statistik", "Dokumen DPA Diskominfotik", "Dokumen IKU Diskominfotik", "Dokumen Info Banda Aceh", "Dokumen Kumpulan Berita Hoax", "Dokumen LKJIP Diskominfotik", "Dokumen Open Data - Publikasi", "Dokumen Perjanjian Kinerja Diskominfotik", "Dokumen Publikasi Buku Produk Sektoral 2017", "Dokumen Publikasi Buku Produk Sektoral 2018", "Dokumen Rencana Aksi Diskominfotik", "Dokumen Renja Diskominfotik", "Dokumen RKA Diskominfotik", "Dokumen RKT Diskominfotik", "Dokumen formulir-permohonan-RESET PASSWORD", "Dokumen IT Master PLan Kota Banda Aceh 2010-2014"],
+            "responses": ["Dokumen tersebut dapat Anda unduh/download di situs berikut <a href='http://diskominfo.bandaacehkota.go.id/download/' target='_blank'>http://diskominfo.bandaacehkota.go.id/download/</a>"],
+            "context": [""]
+        },
+        {
+            "tag": "kadin_kominfotik_bna",
+            "patterns": ["Kepala Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh", "Kadin Kominfotik Banda Aceh", "Nama Kadin Kominfotik", "Siapa kadin kominfotik banda aceh"],
+            "responses": ["Kepala Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh adalah Pak Bustami, SH"],
+            "context": [""]
+        },
+        {
+            "tag": "vismis_kominfotik_bna",
+            "patterns": ["Visi dan Misi Dinas Kominfotik Banda Aceh", "Visi Diskominfo", "Misi Diskominfo Banda Aceh"],
+            "responses": ["Visi Diskominfotik Banda Aceh adalah Terwujudnya penyelenggaraan TIK menuju masyarakat Banda Aceh gemilang yang Islami\ndan\nMisi :\n1. Meningkatkan Kapasitas SDM bidang Teknologi Komunikasi dan Informatika\n2. Meningkatkan sarana, prasarana komunikasi dan informatika\n3. Menyediakan data statistik yang  berkualitas dan  terintegrasi\n4. Membangun sistim aplikasi SKPD  yang berkualitas dan terintegrasi\n5. Menjadikan data sebagai sumber berita dan informasi\n6. Meningkatkan kualitas layanan publik yang profesional berbasis TIK"],
+            "context": [""]
+        },
+        {
+            "tag": "regulasi_daerah_bna",
+            "patterns": ["Regulasi Daerah Kota Banda Aceh", "Perda Peraturan Daerah", "Qanun", "Perwal Peraturan Wilayah", "MoU", "Aturan Kota Banda Aceh", "Peraturan Banda Aceh"],
+            "responses": ["Regulasi yang berlaku di Banda Aceh dapat diakses melalui <a href='http://diskominfo.bandaacehkota.go.id/regulasi-daerah/' target='_blank'>http://diskominfo.bandaacehkota.go.id/regulasi-daerah/</a>"],
+            "context": [""]
+        }
+
+    ]
+}

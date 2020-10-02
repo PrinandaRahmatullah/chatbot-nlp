@@ -5,6 +5,7 @@ import numpy as np
 import random
 import nltk
 import string
+import glob
 
 # from nltk.stem import WordNetLemmatizer
 from keras.models import Sequential, load_model
@@ -18,7 +19,11 @@ words = []
 classes = []
 documents = []
 
-data_file = open('dataset/pola.json').read()
+# folders = glob.glob("dataset/*.json")
+# for fol in folders:
+#     data_file = open(fol).read()
+
+data_file = open('dataset/bandaaceh.json').read()
 intents = json.loads(data_file)
 
 

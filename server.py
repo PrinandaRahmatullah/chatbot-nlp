@@ -5,12 +5,17 @@ import numpy as np
 import random
 import nltk
 import os
+import glob
 
 from flask import Flask, render_template, send_from_directory
 from flask_socketio import SocketIO, emit, send
 from tensorflow.keras.models import Sequential, load_model
 
-intents = json.loads(open('dataset/pola.json').read())
+# folders = glob.glob("dataset/*.json")
+# for fol in folders:
+#     data_file = open(fol).read()
+# intents = json.loads(data_file)
+intents = json.loads(open('dataset/bandaaceh.json').read())
 model = load_model('model/model.h5')
 words = pickle.load(open('model/indo_words.pkl', 'rb'))
 classes = pickle.load(open('model/indo_classes.pkl', 'rb'))
@@ -97,5 +102,5 @@ def favicon():
 def handle_my_custom_event(data):
     resp = chatbot_response(str(data))
     print("Server menerima input : " + str(data) +
-          " resp : " + resp)
+          "\nresp : " + resp)
     emit('response message', resp)

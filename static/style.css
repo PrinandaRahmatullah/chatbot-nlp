@@ -8,16 +8,18 @@ ul li {
 .fabs {
 	bottom: 0;
 	position: fixed;
-	margin: 1em;
+	margin: 1.5em;
 	right: 0;
 	z-index: 998;
 
 }
 
 .fab {
-	display: block;
-	width: 56px;
-	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	height: 65px;
 	border-radius: 50%;
 	text-align: center;
 	color: #f0f0f0;
@@ -25,11 +27,17 @@ ul li {
 	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 	cursor: pointer;
 	-webkit-transition: all .1s ease-out;
-	transition: all .1s ease-out;
+	transition: all .2s ease-out;
 	position: relative;
 	z-index: 998;
 	overflow: hidden;
 	background: #42a5f5;
+
+}
+
+.fab:hover {
+	background: #1c83d6;
+	transform: scale(1.2);
 }
 
 .fab>i {
@@ -87,23 +95,21 @@ ul li {
 	transition-delay: 80ms;
 }
 
-.fab(:last-child):active,
-.fab(:last-child):focus,
-.fab(:last-child):hover {
+/* .fab(:last-child):active, .fab(:last-child):focus, .fab(:last-child):hover {
 	box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
-}
+} */
 
 /*Chatbox*/
 
 .chat {
 	position: fixed;
-	right: 85px;
-	bottom: 20px;
-	width: 400px;
+	right: 100px;
+	bottom: 30px;
+	width: 375px;
 	font-size: 12px;
 	line-height: 22px;
 	font-family: 'Roboto';
-	font-weight: 500;
+	font-weight: 450;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	opacity: 0;
@@ -123,7 +129,7 @@ ul li {
 
 .chat_header {
 	/* margin: 10px; */
-	font-size: 13px;
+	font-size: 14px;
 	font-family: 'Roboto';
 	font-weight: 500;
 	color: #f3f3f3;
@@ -194,13 +200,13 @@ ul li {
 
 .chat_option .agent {
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .chat_option .online {
-	opacity: 0.4;
+	/* opacity: 0.4; */
 	font-size: 11px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .chat_color {
@@ -387,7 +393,7 @@ a {
 	margin: 6px 0 0px 0;
 	height: 300px;
 	min-height: 0;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 	overflow-y: auto;
 	width: 100%;
@@ -729,7 +735,7 @@ strong.chat_time {
 
 @media only screen and (min-width: 1024px) {
 	.chat {
-		width: 300px;
+		width: 375px;
 	}
 
 	.chat_field {

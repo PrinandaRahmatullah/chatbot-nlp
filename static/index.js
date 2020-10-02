@@ -45,7 +45,7 @@ socket.on("connect", function () {
   socket.on("response message", (data) => {
     console.log(data);
     $("div#chat_fullscreen").append(
-      '<span class="chat_msg_item chat_msg_item_admin"><div class="chat_avatar"><img src="../assets/chatbots-logo.png"/></div>' +
+      "<span class='chat_msg_item chat_msg_item_admin'><div class='chat_avatar'><img src='../assets/chatbots-logo.png'/></div>" +
       data +
       "</span>"
     );

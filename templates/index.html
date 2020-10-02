@@ -3,29 +3,31 @@
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <title>Chat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 
 <body>
-  <h1 style="text-align: center">KKP Kominfotik 2020</h1>
+  <div style="display: flex;align-items: center; height: 100%; width: auto; padding-left: 5%;">
+    <img src="{{ url_for('static', filename='assets/Background.png') }}" alt="" style="height: auto; width: 80%;">
+  </div>
 
   <div class="fabs">
     <div class="chat">
       <div class="chat_header">
         <div class="chat_option">
           <div class="header_img">
-            <img src="../assets/chatbots-logo.png" />
+            <img src="{{ url_for('static', filename='assets/chatbots-logo.png') }}" />
           </div>
-          <span id="chat_head">Mandasyeh</span> <br />
+          <span id="chat_head"><strong>Mandasyeh</strong></span> <br />
           <span class="agent">Robot Pembantu</span>
           <span class="online">(Online)</span>
         </div>
       </div>
 
-      <div id="chat_fullscreen" class="chat_conversion chat_converse">
+      <div id="chat_fullscreen" class="chat_converse">
         <span class="chat_msg_item chat_msg_item_admin">
           <div class="chat_avatar">
-            <img src="../assets/chatbots-logo.png" />
+            <img src="{{ url_for('static', filename='assets/chatbots-logo.png') }}" />
           </div>
           Selamat Datang di room Chat Robot. Ada yang bisa dibantu?
         </span>
@@ -49,7 +51,7 @@
       </div>
     </div>
 
-    <!-- Tombol/Logo Bot -->
+    <!-- Tombol ChatBot -->
     <a id="prime" class="fab"><i class="prime zmdi zmdi-comments" actio></i></a>
   </div>
 
@@ -62,6 +64,6 @@
   ></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2.3.0/dist/socket.io.js"></script> -->
   
-  <script src="/index.js"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
   <!-- <script src="app.js"></script> -->
 </body>
