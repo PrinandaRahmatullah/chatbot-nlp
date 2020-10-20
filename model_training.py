@@ -8,9 +8,9 @@ import string
 import glob
 
 # from nltk.stem import WordNetLemmatizer
-from keras.models import Sequential, load_model
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.optimizers import SGD
 
 nltk.download('punkt')
 
@@ -68,7 +68,7 @@ for doc in documents:
     bag = []
     # list of tokenized words for the pattern
     pattern_words = doc[0]
-    # lemmatize each word - create base word, in attempt to represent related words
+    # lowering words
     pattern_words = [word.lower() for word in pattern_words]
 
     # create our bag of words array with 1, if word match found in current pattern

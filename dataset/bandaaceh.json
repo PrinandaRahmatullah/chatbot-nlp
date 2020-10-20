@@ -1,7 +1,7 @@
 {
     "intents": [{
             "tag": "pembuka",
-            "patterns": ["Halo", "Apa kabar ", "Ada orang disana?", "Hey", "Woi", "Hello", "Bro", "Hi", "Hai"],
+            "patterns": ["Halo", "Apa kabar ", "Ada orang disana?", "Hey", "Woi", "Hello", "Bro", "Hi", "Hai", "P", "tes"],
             "responses": ["Hai, Sahabat", "Senang berjumpa kembali", "Helo, ada yang bisa dibantu?"],
             "context": [""]
         },
@@ -249,6 +249,18 @@
             "tag": "sekdew_scbna",
             "patterns": ["Siapa Sekretaris Dewan Smart City?", "SekDew Smart City BAnda Aceh", "Sekretaris Dewan Smart City Banda Aceh"],
             "responses": ["Sekretaris Dewan Smart City yaitu Ir. Bahagia, Dpl., SE."],
+            "context": [""]
+        },
+        {
+            "tag": "bahasa_kasar",
+            "patterns": ["Tolol", "Bodoh sekali kamu", "Taik", "Eek lah", "Pungo", "Bangai", "Puko", "Gila", "Anjing", "Babi"],
+            "responses": ["Astaghfirullah, kasar sekali kamu ya! :("],
+            "context": [""]
+        },
+        {
+            "tag": "percakapan",
+            "patterns": ["Hai Cantik", "Hai Ganteng", "Manis kamu"],
+            "responses": ["Hahaha, saya robotlah. Gak ada rupa :)"],
             "context": [""]
         }
     ]
