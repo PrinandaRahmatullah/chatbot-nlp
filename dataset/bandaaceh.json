@@ -1,267 +1,781 @@
 {
-    "intents": [{
-            "tag": "pembuka",
-            "patterns": ["Halo", "Apa kabar ", "Ada orang disana?", "Hey", "Woi", "Hello", "Bro", "Hi", "Hai", "P", "tes"],
-            "responses": ["Hai, Sahabat", "Senang berjumpa kembali", "Helo, ada yang bisa dibantu?"],
-            "context": [""]
-        },
-        {
-            "tag": "penutup",
-            "patterns": ["Bye", "Sampai jumpa", "Sampai jumpa lagi", "Cukup ya", "Cukup dulu ya", "Dah"],
-            "responses": ["Sampai Jumpa!", "Dah, Sahabat!", "Sampai jumpa lagi ya!", "Oke, sampai jumpa", "Oke, see you teman!"],
-            "context": [""]
-        },
-        {
-            "tag": "makasih",
-            "patterns": ["Terima Kasih", "Makasih", "Sangat Membantu, Makasih ya!", "Wow, Terima Kasih", "Terima Kasih sudah membantu"],
-            "responses": ["Senang Membantu Anda!", "Kapan saja!", "Aman tu", "Sip"],
-            "context": [""]
-        },
-        {
-            "tag": "kosong",
-            "patterns": [],
-            "responses": ["Maaf, bisa tanyakan ulang?", "Mohon tanyakan yang benar :D", "Saya robot, tidak paham hati Anda hahaha", "Mau Bertanya?", "Tanya apa?", "Tentang apa?", "Apa yang Anda bicarakan?"],
-            "context": [""]
-        },
-        {
-            "tag": "pilihan",
-            "patterns": ["Bagaimana Anda bisa membantu saya?", "Bisa apa?", "Apa yang kamu bisa?", "Ngapain Anda?", "Mau tolong apa?", "Bisa tolong saya?", "Bisa tolong apa?", "Tolong saya!", "Informasi apa?", "Informasi apa saja?", "Tolong saya!", "Bisa bantu saya?"],
-            "responses": ["Saya bisa jelaskan :\n1. Siapa saya\n2. Pembuat saya\n3. Info tentang Banda Aceh beserta pemerintahannya\n4. Sejarah, Geografis Banda Aceh\n5.Dan berbagai nformasi yang ingin Anda ketahui tentang Banda Aceh Smart City :D\n"],
-            "context": [""]
-        },
-        {
-            "tag": "siapa_kamu",
-            "patterns": ["Siapa kamu?", "Kenalkan dirimu!", "Kamu siapa?", "Kamu?", "Perkenalkan dirimu?", "Saya tidak kenal!", "Saya tidak kenal kamu!"],
-            "responses": ["Saya RoPe Mandasyeh, Robot Pembantu Masyarakat Banda Aceh :D. Saya akan membantu Anda untuk mengetahui informasi yang Anda inginkan"],
-            "context": [""]
-        },
-        {
-            "tag": "siapa_saya",
-            "patterns": ["Saya siapa?", "Siapa saya?", "Kenalkan diri saya!", "Tolong kasih tahu siapa saya!", "Saya?"],
-            "responses": ["Kamu adalah orang yang harus saya bantu :D", "Kamu adalah tamu saya dan tamu adalah Raja", "Kamu adalah tuan saya", "Kamu adalah partisipan yang harus saya layani"],
-            "context": [""]
-        },
-        {
-            "tag": "pembuat_kamu",
-            "patterns": ["Pembuat kamu?", "Kamu siapa yang buat?", "Kamu buatan?", "Siapa pembuatmu?", "Siapa penciptamu?"],
-            "responses": ["Saya dibuat oleh Prinanda Rahmatullah, mahasiswa Informatika 2017 yang sedang KKP di Dinas Kominfotik Banda Aceh", "Saya buatan Prinanda Rahmatullah, Informatics Student"],
-            "context": [""]
-        },
-        {
-            "tag": "pimpinan",
-            "patterns": ["Unsur Pimpinan Banda Aceh", "Pemimpin", "Siapa Pak Wali?", "Siapa pak Wakil?", "Walikota dan wakil walikota", "Siapa Walikota Banda Aceh?", "Sekretaris Daerah Banda Aceh", "Sekda Banda Aceh"],
-            "responses": ["Walikota :\nH. Aminullah Usman, S.E., AK, M.M\n<a href='https://bandaacehkota.go.id/p/wali-kota.html' target='_blank'>Cek Profil Pak Amin</a>\n\nWakil Walikota : Drs. H. Zainal Arifin\n<a href='https://bandaacehkota.go.id/p/wakil-wali-kota.html' target='_blank'>Cek Profil Pak Zainal</a>\n\ndan Sekretaris Daerah : Ir Bahagia Dipl SE\n<a href='https://bandaacehkota.go.id/p/seketaris-daerah.html' target='_blank'>Cek Profil Pak Bahagia</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "pemerintahan",
-            "patterns": ["Unsur pemerintahan", "Jelaskan pemerintahan", "Pemerintah"],
-            "responses": ["SKPK : 44 orang\nKecamatan : 9 kecamatan\nDesa : 90 desa\nMukim : 17 mukim\nJumlah PNS : 4307 orang"],
-            "context": [""]
-        },
-        {
-            "tag": "pejabat_bna",
-            "patterns": ["Pejabat", "Pejabat Stuktural", "Informasi Pejabat Struktur"],
-            "responses": ["Informasi Pejabat Struktural Banda Aceh bisa diperoleh pada link berikut :\n<a href='https://bandaacehkota.go.id/p/pejabat-struktural.html' target='_blank'>https://bandaacehkota.go.id/p/pejabat-struktural.html</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "kerjasama_bna",
-            "patterns": ["Kerja Sama", "Kerja sama Pemerintahan", "Informasi Kerja Sama"],
-            "responses": ["Informasi Kerja Sama Pemerintah Kota Banda Aceh bisa dibaca pada link berikut :\n<a href='https://bandaacehkota.go.id/p/kerja-sama.html' target='_blank'>https://bandaacehkota.go.id/p/kerja-sama.html</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "sosmed_bna",
-            "patterns": ["Sosial Media Humas Banda Aceh", "Sosmed", "SocMed", "Media Sosialnya"],
-            "responses": ["Instagram : <a href='https://www.instagram.com/humasbna/' target='_blank'>Humas Kota Banda Aceh</a><br/>Facebook : <a href='https://www.facebook.com/humaspemkobandaaceh/' target='_blank'>Pemko Banda Aceh</a>\nTwitter : <a href='https://twitter.com/humasbna' target='_blank'>Pemko Banda Aceh</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "demografi_bna",
-            "patterns": ["Demografi Banda Aceh", "demografi", "demografi bna", "Saya ingin tahu Demografinya"],
-            "responses": ["Jumlah Penduduk : 259.913 Jiwa", "Laju Pertumbuhan Penduduk : 1.96%"],
-            "context": [""]
-        },
-        {
-            "tag": "pad_bna",
-            "patterns": ["PAD Banda Aceh", "Pendapatan BAnda Aceh", "Saya mau tau PAD BAnda", "Pendapatan Asli Daerah Banda Aceh"],
-            "responses": ["Capaian penerimaan PAD Kota Banda Aceh tahun 2017 sebanyak 96,19% dengan target penerimaan PAD Kota Banda Aceh sebanyak Rp.280.877.031.733, dan realisasi penerimaan sebanyak Rp. 270.170.805.366,-. Penerimaan zakat, infaq, dan shadaqah pada Baitul Mal Kota Banda Aceh tahun 2017 mencapai Rp.14.639.943.516,- dan penyaluran sebanyak Rp. 19.563.132.341,- pada 11.531 orang"],
-            "context": [""]
-        },
-        {
-            "tag": "visi_misi_bna",
-            "patterns": ["Visi Misi Banda Aceh", "Jelaskan Visi banda aceh", "apa visinya banda aceh", "misi kota banda aceh"],
-            "responses": ["Visi Kota Banda Aceh yaitu \"Terwujudnya Kota Banda Aceh gemilang dalam bingkai syariah\"\ndan\nMisi Kota Banda Aceh yaitu :\n1. Meningkatkan pelaksanaan syariat islam dalam bidang penguatan aqidah, syariah dan akhlak.\n2. Meningkatkan kualitas pendidikan, kebudayaan, kepemudaan dan olahraga\n3. Meningkatkan pertumbuhan ekonomi, pariwisata dan kesejahteraan masyarakat\n4. Meningkatkan kualitas kesehatan masyarakat\n5. Meningkatkan kualitas tata kelola pemerintahan yang baik\n6. Membangun infrastruktur kota yang ramah lingkungan dan berkelanjutan\n7. Memperkuat upaya pemberdayaan perempuan dan perlindungan anak"],
-            "context": [""]
-        },
-        {
-            "tag": "bna",
-            "patterns": ["Banda Aceh", "Kota Banda Aceh", "Saya mau tau Banda Aceh", "Jelaskan Banda Aceh"],
-            "responses": ["Silahkan baca lebih lanjut di link berikut :\n<a href='https://id.wikipedia.org/wiki/Kota_Banda_Aceh' target='_blank'>https://id.wikipedia.org/wiki/Kota_Banda_Aceh</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "sejarah_bna",
-            "patterns": ["Sejarah Kota Banda Aceh", "Sejarah mandasyeh", "Saya mau tau sejarah", "Jelaskan sejarah Banda Aceh", "Banda Aceh zaman dulu", "Banda Aceh tempo dulu", "Banda aceh dulunya", "Banda Aceh Jadul"],
-            "responses": ["Bandar Aceh Darussalam adalah merupakan ibu kota Kerajaan Aceh Darussalam yang dibangun oleh Sultan Johan Syah pada hari Jumat, tanggal 1 Ramadhan 601 H (22 April 1205 M)", "Kerajaan Aceh mencapai puncak kejayaan saat dipimpin oleh Sultan Iskandar Muda (1607-1636), yang merupakan tokoh legendaris dalam sejarah Aceh", "Kota Banda Aceh telah berusia 813 tahun dan merupakan salah satu kota islam tertua di Asia Tenggara", "Di masa jayanya, Bandar Aceh Darussalam merupakan pusat pendidikan islam yang dikunjungi oleh banyak pelajar dari seluruh dunia", "Banda Aceh dulu merupakan pusat perdagangan yang dikunjungi oleh para pedagang dari seluruh dunia termasuk dari Arab, Turki, China, Eropa, dan India"],
-            "context": [""]
-        },
-        {
-            "tag": "prestasi_bna",
-            "patterns": ["Prestasi Banda Aceh", "Jelaskan prestasi Banda Aceh!", "Sebutkan prestasi Banda", "Apa saja prestasinya?", "Prestasi"],
-            "responses": ["Banda Aceh telah meraih berbagai macam Prestasi :\n1. Walikota Entrepreneur Award dari Kemenko dan UKM RI tahun 2018\n2. WTP dari BPK RI tahun 2018\n3. Anugerah Kebudayaan dari Kemendikbud RI 2017\n4. Anugerah KASN dari KASN 2018\n5. Aceh Investment Award dari Pemerintah Aceh 2017\n6. Piala Adupura 2017 dan lainnya\n\nPrestasi lebih lanjut dapat dibaca pada situs web Banda Aceh Berikut :\n<a href='https://bandaacehkota.go.id/p/prestasi.html' target='_blank'>https://bandaacehkota.go.id/p/prestasi.html</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "program_unggulan_bna",
-            "patterns": ["Program Unggulan Banda Aceh", "Informasi Program Unggulan", "Banda Aceh Unggulan"],
-            "responses": ["Program Unggulan Kota Banda Aceh ada pada link berikut ini :\n<a href='https://bandaacehkota.go.id/p/program-unggulan.html' target='_blank'>https://bandaacehkota.go.id/p/program-unggulan.html</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "rumah_ibadah_bna",
-            "patterns": ["Informasi mengenai agama di Banda Aceh", "Keagamaan Banda Aceh", "Pemeluk Agama", "Jumlah pemeluk islam", "pemeluk kristen", "pemeluk hindu", "pemeluk budha"],
-            "responses": ["Masyarakat Kota Banda Aceh mayoritas pemeluk agama Islam, namun di kota ini juga berkembang agama lainnya, seperti Kristen, Hindu, Budha dan lainnya yang hidup berdampingan dengan Muslim. Berikut Jumlah pemeluk agama di Kota Banda Aceh :\n1. Islam, 222.582 Jiwa\n2. Protestan, 717 Jiwa\n3. Katolik, 538 Jiwa\n4. Hindu, 39 jiwa\n5. Budha, 2755 jiwa"],
-            "context": [""]
-        },
-        {
-            "tag": "website_bna",
-            "patterns": ["Website Banda Aceh", "Situs web Banda Aceh", "Situs Banda Aceh", "web Banda Aceh"],
-            "responses": ["Silahkan akses ke <a href='https://bandaacehkota.go.id/' target='_blank'>https://bandaacehkota.go.id/</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "geografi_bna",
-            "patterns": ["Geografi Banda Aceh", "Lokasi Banda Aceh", "Jelaskan Geografi Mandasyeh", "Saya ingin tahu Geografi Banda Aceh!"],
-            "responses": ["Banda Aceh berada di 05°30’- 05°35’ LU dan 95°30’-99°16’ BT\nTerdiri dari 9 kecamatan, 90 Gampong\nLuas wilayah Kota Banda Aceh adalah 59,002 km persegi\nPerbatasan Utara dengan Selat Malaka, Perbatasan Selatan dengan Kecamatan Darul Imarah dan Kecamatan Ingin Jaya Kabupaten Aceh Besar, Perbatasan Barat dengan Kecamatan Peukan Bada Kabupaten Aceh Besar, dan Perbatasan Timur dengan Kecamatan Krueng Barona Jaya dan Kecamatan Darussalam Kabupaten Aceh Besar"],
-            "context": [""]
-        },
-        {
-            "tag": "geologi_bna",
-            "patterns": ["Geologi Banda Aceh", "Jelaskan Geologi Bna", "Saya ingin tahu geologinya", "geologi"],
-            "responses": ["Pulau Sumatera dilalui oleh patahan aktif yang memanjang dari Banda Aceh di utara hingga Lampung di selatan, yang dikenal sebagai Sesar Semangko (Semangko Fault). Patahan ini bergeser sekitar 11 cm/tahun dan merupakan daerah rawan gempa dan longsor", "Kota Banda Aceh diapit oleh dua patahan di Barat dan Timur kota, yaitu patahan Darul Imarah dan Darussalam, dan kedua patahan yang merupakan sesar aktif tersebut diperkirakan bertemu pada pegunungan di Tenggara Kota", "Banda Aceh adalah suatu daratan hasil ambalasan sejak Pilosen, membentuk suatu Graben, sehingga dataran Banda Aceh ini merupakan batuan sedimen yang berpengaruh kuat apabila terjadi gempa di sekitarnya", "Kota Banda Aceh juga berada pada pertemuan Plate Euroasia dan Australia berjarak ±130 km dari garis pantai barat sehingga daerah ini rawan terhadap Tsunami", "Litologi Kota Banda Aceh merupakan susunan batuan yang kompleks, terdiri dari batuan sedimen, meta sedimen, batu gamping, batuan hasil letusan gunung api, endapan alluvium, dan intrusi batuan beku, berumur holosen hingga Pra-Tersier"],
-            "context": [""]
-        },
-        {
-            "tag": "hidrologi_bna",
-            "patterns": ["Hidrologi Banda Aceh", "Jelaskan Hidrologi Bna", "Saya ingin tahu hidrologinya", "hidrologi", "Kondisi air Banda Aceh", "Perairan"],
-            "responses": ["Terdapat 7 (tujuh) sungai yang melalui Kota Banda Aceh yang berfungsi sebagai daerah aliran sungai dan sumber air baku, kegiatan perikanan, dan sebagainya", "Wilayah Kota Banda Aceh memiliki air tanah yang bersifat asin, payau dan tawar", "Daerah dengan air tanah asin terdapat pada bagian utara dan timur kota sampai ke tengah kota. Air payau berada di bagian tengah kota membujur dari timur ke barat. Sedangkan wilayah yang memiliki air tanah tawar berada di bagian selatan kota membentang dari Kecamatan Baiturrahman sampai Kecamatan Jaya Baru, yang juga mencakup Kecamatan Lueng Bata, Ulee Kareng, Banda Raya"],
-            "context": [""]
-        },
-        {
-            "tag": "klimatologi_bna",
-            "patterns": ["Klimatologi Banda Aceh", "Jelaskan Klimatologi Bna", "Saya ingin tahu klimatologinya", "klimatologi", "Cuaca Banda Aceh"],
-            "responses": ["Berdasarkan data klimatologi untuk wilayah Kota Banda Aceh yang diperoleh dari Stasiun Meteorologi dan Geofisika Indrapuri di tahun 2017 menunjukkan bahwa, suhu udara rata - rata bulanan berkisar antara 26 C dengan suhu maksimal 34 C dan minimal 22, 4 C dengan tekanan udara(minibar) rata - rata 1012, 617(mb)", "Curah hujan kota Banda Aceh terbesar pada tahun 2017 terjadi pada bulan Januari yaitu sebesar 259 mm dan terkecil terjadi pada bulan April sebesar 15 mm. Jumlah curah hujan ini selama tahun 2017 yaitu sebesar 1146 mm, dengan rata-rata per bulannya sebesar 99.5 mm/bulan", "Kelembaban udara rata-rata per bulan dalam satu tahun yaitu 82%"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_city",
-            "patterns": ["Apa itu Smart CIty Banda Aceh", "Smart City?", "Smart City Banda Aceh", "Jelaskan Banda Smart"],
-            "responses": ["Kota yang Smart merupakan sebuah cara untuk membentuk Kota Banda Aceh menjadi sebuah kota yang layak huni dengan penyediaan fasilitas umum yang memadai agar mampu memberikan berbagai kemudahan dan meningkatkan kesejahteraan serta kenyamanan bagi Masyarakat Banda Aceh", "Dengan identitas Banda Aceh sebagai kota Smart yang islami yang menjadikan sebuah keunikan dan nilai tambah sendiri bagi Kota Banda Aceh", ""],
-            "context": [""]
-        },
-        {
-            "tag": "laproker_scbna",
-            "patterns": ["Laporan Program Kerja Smart City", "Laporan Program Kerja Banda Aceh Smart City"],
-            "responses": ["Laporan Program Kerja Banda Aceh Smart City bisa diakses pada link berikut :\n<a href='https://smartcity.bandaacehkota.go.id/laporan' target='_blank'>Laporan Program Kerja</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "dimensi_scbna",
-            "patterns": ["Sebutkan dimensi smart city Banda Aceh", "Smart City BAnda Aceh", "smart city", "Dimensi smart city"],
-            "responses": ["Ada 6 Dimensi Smart City Banda Aceh :\n1. Smart Governance\n2. Smart Branding\n3. Smart Economy\n4. Smart Living\n5. Smart Society\n6. Smart Environment"],
-            "context": [""]
-        },
-        {
-            "tag": "visimisi_scbna",
-            "patterns": ["JElaskan Visi dan Misi Banda Aceh Smart City", "Saya ingin tahu visi misi Smart CIty!", "Visi Misi Banda Aceh Smart City"],
-            "responses": ["Visi Banda Aceh Smart City : \"Menjadi Kota Pintar Islami yang Inovatif dan Kompetitif\"\ndan \nMisi Banda Aceh Smart City :\n1. Mewujudkan tata kelola pemerintahan yang efektif, efisien, transparan, partisipatif, dan komunikatif (Smart Governance)\n2. Mewujudkan Kota Banda Aceh untuk berinovasi dengan menguatkan identitas Kota Banda Aceh menjadi pusat wisata islami dunia yang cerdas dan berbudaya (Smart Branding)\n3. Meningkatkan pertumbuhan ekonomi, dan kesejahteraan masyarakat dengan mewujudkan penataan di sektor industri dan ekonomi Syariah (Smart Economy)\n4. Mewujudkan ekosistem perkotaan yang maju dengan sarana dan prasarana publik yang berkualitas dan terintegrasi dengan masyarakat yang sehat, toleran serta memiliki rasa kebersamaan yang kuat (Smart Living)\n5. Mewujudkan masyarakat yang kreatif, berdaya saing dan mampu menjaga keamanan lingkungannya (Smart Society)\n6. Mewujudkan Kota Banda Aceh Menjadi Kota yang ramah lingkungan, hijau, bersih, tangguh, dan berkelanjutan (Smart Environment)"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_governance",
-            "patterns": ["Apa itu Smart Governance?", "Apa yang dimaksud dengan Smart Governance", "Smart Governance", "Saya ingin tahu Smart Governance"],
-            "responses": ["Smart Governance merupakan dimensi pembangunan untuk menciptakan tata kelola pemerintahan Kota Banda Aceh yang dilaksanakan secara pintar, sehingga Smart Governance dalam dimensi Smart City merupakan gambaran pemerintahan yang memberikan layanan publik yang efisien dan berkualitas kepada masyarakat, memantau pembangunan dan meningkatkan partisipasi warga dalam proses pembangunan", "Smart Governance terdiri dari tiga sub pilar berikut : \n1. Public Service, yaitu meningkatkan layanan publik\n2. Bureaucracy, yaitu meningkatkan kinerja birokrasi\n3. Public Policy, yaitu peningkatan efisiensi kebijakan publik", "Smart Governance lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/1' target='_blank'>Smart Governance</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_branding",
-            "patterns": ["Apa itu Smart Branding?", "Apa yang dimaksud dengan Smart Branding", "Smart Branding", "Saya ingin tahu Smart Branding"],
-            "responses": ["Smart Branding merupakan dimensi pembangunan Smart City yang fokus dalam meningkatkan daya saing Kota Banda Aceh dan memasarkan potensi kota dalam lingkup lokal, nasional, maupun internasional", "Pemasaran potensi kota Banda Aceh ini diharapkan dapat mendorong aktivitas perekonomian dan pada akhirnya meningkatkan kesejahteraan masyarakat", "Smart Branding terdiri dari tiga sub pilar berikut:\n1. Tourism, yaitu membangun ekosistem pariwisata\n2.Business, yaitu membangun daya saing bisnis(industri kreatif)\n3.Appeareance, yaitu penataan wajah daerah", "Smart Branding lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/2' target='_blank'>Smart Branding</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_economy",
-            "patterns": ["Apa itu Smart Economy?", "Apa yang dimaksud dengan Smart Economy", "Smart Economy", "Saya ingin tahu Smart Economy"],
-            "responses": ["Smart Economy merupakan pembangunan tata kelola perekonomian yang mampu menghadapi tantangan dan adaptif terhadap perubahan sehingga terwujudnya ekosistem yang mendukung aktivitas ekonomi masyakat yang selaras dengan sektor ekonomi unggulan daerah", "Dengan adanya Smart Economy, diharapkan pertumbuhan ekonomi dapat ditunjang secara efektif dan efisien serta berkelanjutan dalam meningkatkan kesejahteraan masyarakat", "Smart Economy terdiri dari tiga sub pilar berikut :\n1. Industry: penataan industri primer, sekunder dan tersier\n2. Welfare: peningkatan kesejahteraan masyarakat\n3. Transaction: membangun ekosistem keuangan", "Smart Economy lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/3' target='_blank'>Smart Economy</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_living",
-            "patterns": ["Apa itu Smart Living?", "Apa yang dimaksud dengan Smart Living", "Smart Living", "Saya ingin tahu Smart Living"],
-            "responses": ["Smart Living merupakan dimensi pembangunan tata kelola kelayakan taraf hidup masyarakat Kota Banda Aceh sehingga mewujudkan lingkungan tempat tinggal yang layak, nyaman, dan efisien bagi masyarakat", "Smart Living terdiri dari tiga sub pilar berikut :\n1. Harmony, yaitu harmonisasi tata ruang dan lingkungan yang nyaman\n2. Health, yaitu menjamin fasilitas dan pelayanan kesehatan\n3. Mobility, yaitu membangun sarana transportasi dan logistik", "Smart Living lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/4' target='_blank'>Smart Living</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_society",
-            "patterns": ["Apa itu Smart Society?", "Apa yang dimaksud dengan Smart Society", "Smart Society", "Saya ingin tahu Smart Society"],
-            "responses": ["Smart Society merupakan dimensi pembangunan tata kelola ekosistem masyarakat yang humanis dan dinamis, baik antar individu, antara individu dengan kelompok, ataupun antara kelompok dengan kelompok", "Dengan adanya Smart Society, Interaksi masyarakat diharapkan terjalin intensif sehingga membentuk sebuah tatanan yang produktif secara positif dengan digital literasi yang baik", "Smart Society terdiri dari tiga sub pilar berikut:\n1. Community, yaitu membangun masyarakat yang pintar\n2. Learning, yaitu membangun sistem edukasi yang efisien\n3. Security, yaitu menjamin keamanan dan keselamatan", "Smart Society lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/5' target='_blank'>Smart Society</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "smart_environment",
-            "patterns": ["Apa itu Smart Environment?", "Apa yang dimaksud dengan Smart Environment", "Smart Environment", "Saya ingin tahu Smart Environment"],
-            "responses": ["Smart Environment merupakan dimensi pembangunan tata kelola lingkungan yang pintar", "Smart Environment yaitu di mana pembangunan sarana dan prasarana bagi masyarakat berorientasi pada lingkungan hidup, sehingga terwujud tata kelola lingkungan yang baik, bertanggung-jawab, dan berkelanjutan", "Smart Environment terdiri dari tiga sub pilar berikut:\n1. Protection, yaitu perlindungan lingkungan\n2. Waste, yaitu tata kelola sampah dan limbah\n3. Energy, yaitu membangun tata kelola energi yang bertanggung jawab dan berkelanjutan", "Smart Environment lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/6' target='_blank'>Smart Environment</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "website_scbna",
-            "patterns": ["Website Smart City Banda Aceh", "Situs web Smart city Bna", "Situs web Banda Aceh Smart City", "Situs Smart City", "Web Smart city"],
-            "responses": ["Silahkan akses ke <a href='https://smartcity.bandaacehkota.go.id' target='_blank'>https://smartcity.bandaacehkota.go.id</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "cp_scbna",
-            "patterns": ["Hubungi Smart City", "Contact Person Smart City", "CP pengelola smart city", "Alamat pengelola Smart City"],
-            "responses": ["Silahkan hubungi smart city di <br/>Telepon : (0651) 7551641\nFax : (0651) 7557269\nEmail : diskominfotik@bandaacehkota.go.id\nAlamat : Jl. T. Nyak Arief No. 130 Banda Aceh, 23115"],
-            "context": [""]
-        },
-        {
-            "tag": "masukan_scbna",
-            "patterns": ["Kritik Masukan Saran", "Dimana saya bisa memberikan masukan smart city", "Masukan dari masyarakat Smart City", "Kontribusi Masyarakat Smart City", "Saya ingin memberikan kritik dan saran Smart City"],
-            "responses": ["Wah boleh ni. Untuk kritik, saran, dan masukan silahkan akses ke <a href='https://smartcity.bandaacehkota.go.id/kontribusi' target='_blank'>https://smartcity.bandaacehkota.go.id/kontribusi</a>"],
-            "context": [""]
-        },
-        {
-            "tag": "rencana_aksi",
-            "patterns": ["Rencana Aksi Smart City BAnda Aceh", "Apa itu rencana aksi?", "JElaskan rencana aksi kota ini!"],
-            "responses": ["Rencana aksi Smart City merupakan langkah awal dari suatu upaya perubahan yang sistematik", "Rencana Aksi smart City berawal dari masalah yang jelas dan spesifik sehingga diharapkan mampu menciptakan rencana-rencana yang memiliki tolak ukur keberhasilan yang pasti", "Rencana aksi Smart City Banda Aceh disusun dengan menggunakan prinsip:\n1. Specific (spesifik)\n2. Measureable (terukur)\n3. Achievable (dapat dicapai)\n4. Realistic (realistik)\n5. Timebound (batas waktu)", "Rencana aksi Smart City dibagi dalam 4 (empat) Rencana, yaitu:\n1. Pengembangan kebijaksanaan dan kelembagaan Smart City Banda Aceh\n2. Rencana pembangunan infrastruktur pendukung Smart City Banda Aceh\n3. Rencana pengembangan aplikasi dan perangkat lunak pendukung Smart City Banda Aceh\n4. Rencana penguatan literasi Smart City Banda Aceh"],
-            "context": [""]
-        },
-        {
-            "tag": "peta_pembangunan_smart_city",
-            "patterns": ["Peta Jalan Pembangunan Smart City", "Peta Implementasi Smart City", "Jelaskan PEta Implementasi Smart City!", "Road Map Smart City"],
-            "responses": ["Peta Jalan Implementasi program pembangunan Smart City merupakan langkah-langkah yang harus dilakukan oleh pemerintah Kota Banda Aceh dalam mewujudkan Masterplan Smart City menjadi pelaksanaan pembangunan", "Peta jalan pembangunan Smart City terbagi dalam 3 (tiga) tahapan, yaitu :\n1.Pembangunan Jangka Pendek.Perencanaan pembangunan Smart City dalam jangka waktu 1(satu) tahun kedepan\n2.Pembangunan Jangka Menengah.Perencanaan pembangunan Smart City dalam jangka waktu 5(lima) tahun kedepan\n3.Pembangunan Jangka Panjang.Perencanaan pembangunan Smart City dalam jangka waktu 10(sepuluh) tahun kedepan"],
-            "context": [""]
-        },
-        {
-            "tag": "sekdew_scbna",
-            "patterns": ["Siapa Sekretaris Dewan Smart City?", "SekDew Smart City BAnda Aceh", "Sekretaris Dewan Smart City Banda Aceh"],
-            "responses": ["Sekretaris Dewan Smart City yaitu Ir. Bahagia, Dpl., SE."],
-            "context": [""]
-        },
-        {
-            "tag": "bahasa_kasar",
-            "patterns": ["Tolol", "Bodoh sekali kamu", "Taik", "Eek lah", "Pungo", "Bangai", "Puko", "Gila", "Anjing", "Babi"],
-            "responses": ["Astaghfirullah, kasar sekali kamu ya! :("],
-            "context": [""]
-        },
-        {
-            "tag": "percakapan",
-            "patterns": ["Hai Cantik", "Hai Ganteng", "Manis kamu"],
-            "responses": ["Hahaha, saya robotlah. Gak ada rupa :)"],
-            "context": [""]
-        }
-    ]
+	"intents": [{
+			"tag": "pembuka",
+			"input_patterns": [
+				"Halo",
+				"Apa kabar ",
+				"Ada orang disana?",
+				"Hey",
+				"Woi",
+				"Hello",
+				"Bro",
+				"Hi",
+				"Hai",
+				"P",
+				"tes"
+			],
+			"responses": [
+				"Hai, Sahabat",
+				"Senang berjumpa kembali",
+				"Helo, ada yang bisa dibantu?"
+			]
+		},
+		{
+			"tag": "penutup",
+			"input_patterns": [
+				"Bye",
+				"Sampai jumpa",
+				"Sampai jumpa lagi",
+				"Cukup ya",
+				"Cukup dulu ya",
+				"Dah"
+			],
+			"responses": [
+				"Sampai Jumpa!",
+				"Dah, Sahabat!",
+				"Sampai jumpa lagi ya!",
+				"Oke, sampai jumpa",
+				"Oke, see you teman!"
+			]
+		},
+		{
+			"tag": "makasih",
+			"input_patterns": [
+				"Terima Kasih",
+				"Makasih",
+				"Sangat Membantu, Makasih ya!",
+				"Wow, Terima Kasih",
+				"Terima Kasih sudah membantu"
+			],
+			"responses": ["Senang Membantu Anda!", "Kapan saja!", "Aman tu", "Sip"]
+		},
+		{
+			"tag": "kosong",
+			"input_patterns": [],
+			"responses": [
+				"Maaf, bisa tanyakan ulang?",
+				"Mohon tanyakan yang benar :D",
+				"Saya robot, tidak paham hati Anda hahaha",
+				"Mau Bertanya?",
+				"Tanya apa?",
+				"Tentang apa?",
+				"Apa yang Anda bicarakan?"
+			]
+		},
+		{
+			"tag": "pilihan",
+			"input_patterns": [
+				"Bagaimana Anda bisa membantu saya?",
+				"Bisa apa?",
+				"Apa yang kamu bisa?",
+				"Ngapain Anda?",
+				"Mau tolong apa?",
+				"Bisa tolong saya?",
+				"Bisa tolong apa?",
+				"Tolong saya!",
+				"Informasi apa?",
+				"Informasi apa saja?",
+				"Tolong saya!",
+				"Bisa bantu saya?",
+				"bantu saya"
+			],
+			"responses": [
+				"Saya bisa jelaskan :<br>1. Siapa saya<br>2. Pembuat saya<br>3. Info tentang Kota Banda Aceh beserta pemerintahannya<br>4. Sejarah dan Geografis Banda Aceh<br>5. Dan berbagai informasi yang ingin Anda ketahui tentang Banda Aceh Smart City :D"
+			]
+		},
+		{
+			"tag": "siapa_kamu",
+			"input_patterns": [
+				"Siapa kamu?",
+				"Kenalkan dirimu!",
+				"Kamu siapa?",
+				"Kamu?",
+				"Perkenalkan dirimu?",
+				"Saya tidak kenal!",
+				"Saya tidak kenal kamu!",
+				"Kamu robot atau manusia?"
+			],
+			"responses": [
+				"Saya RoPe Mandasyeh, Robot Pembantu Masyarakat Banda Aceh :D. Saya akan membantu Anda untuk mengetahui informasi yang Anda inginkan"
+			]
+		},
+		{
+			"tag": "siapa_saya",
+			"input_patterns": [
+				"Saya siapa?",
+				"Siapa saya?",
+				"Kenalkan diri saya!",
+				"Tolong kasih tahu siapa saya!",
+				"Saya?"
+			],
+			"responses": [
+				"Kamu adalah orang yang harus saya bantu :D",
+				"Kamu adalah tamu saya dan tamu adalah Raja",
+				"Kamu adalah tuan saya",
+				"Kamu adalah partisipan yang harus saya layani"
+			]
+		},
+		{
+			"tag": "pembuat_kamu",
+			"input_patterns": [
+				"Pembuat kamu?",
+				"Kamu siapa yang buat?",
+				"Kamu buatan?",
+				"Siapa pembuatmu?",
+				"Siapa penciptamu?"
+			],
+			"responses": [
+				"Saya dibuat oleh Prinanda Rahmatullah, mahasiswa Informatika 2017 yang sedang KKP di Dinas Kominfotik Banda Aceh.<br>Silahkan cek profilnya di <a href='https://www.linkedin.com/in/prinanda-rahmatullah-7398841a0/' target='_blank'>LinkedIn Prinanda Rahmatullah</a>",
+				"Saya buatan Prinanda Rahmatullah, Informatics Student of Syiah Kuala University.<br>Silahkan cek profilnya di <a href='https://www.linkedin.com/in/prinanda-rahmatullah-7398841a0/' target='_blank'>LinkedIn Prinanda Rahmatullah</a>"
+			]
+		},
+		{
+			"tag": "pimpinan_bna",
+			"input_patterns": [
+				"Unsur Pimpinan Banda Aceh",
+				"Pemimpin",
+				"Siapa Pak Wali?",
+				"Siapa pak Wakil?",
+				"Walikota dan wakil walikota",
+				"Siapa Walikota Banda Aceh?",
+				"Sekretaris Daerah Banda Aceh",
+				"Sekda Banda Aceh"
+			],
+			"responses": [
+				"Walikota : H. Aminullah Usman, S.E., AK, M.M <a href='https://bandaacehkota.go.id/p/wali-kota.html' target='_blank'>Cek Profil Pak Amin</a><br>Wakil Walikota : Drs. H. Zainal Arifin <a href='https://bandaacehkota.go.id/p/wakil-wali-kota.html' target='_blank'>Cek Profil Pak Zainal</a><br>dan Sekretaris Daerah : Ir Bahagia Dipl SE <a href='https://bandaacehkota.go.id/p/seketaris-daerah.html' target='_blank'>Cek Profil Pak Bahagia</a>"
+			]
+		},
+		{
+			"tag": "pemerintahan_bna",
+			"input_patterns": [
+				"Unsur pemerintahan",
+				"Jelaskan pemerintahan",
+				"Pemerintah"
+			],
+			"responses": [
+				"SKPK : 44 orang<br>Kecamatan : 9 kecamatan<br>Desa : 90 desa<br>Mukim : 17 mukim<br>Jumlah PNS : 4307 orang"
+			]
+		},
+		{
+			"tag": "pejabat_bna",
+			"input_patterns": [
+				"Pejabat",
+				"Pejabat Stuktural",
+				"Informasi Pejabat Struktur"
+			],
+			"responses": [
+				"Informasi Pejabat Struktural Banda Aceh bisa diperoleh pada link berikut :<a href='https://bandaacehkota.go.id/p/pejabat-struktural.html' target='_blank'>https://bandaacehkota.go.id/p/pejabat-struktural.html</a>"
+			]
+		},
+		{
+			"tag": "kerjasama_bna",
+			"input_patterns": [
+				"Kerja Sama",
+				"Kerja sama Pemerintahan",
+				"Informasi Kerja Sama"
+			],
+			"responses": [
+				"Informasi Kerja Sama Pemerintah Kota Banda Aceh bisa dibaca pada link berikut :<a href='https://bandaacehkota.go.id/p/kerja-sama.html' target='_blank'>https://bandaacehkota.go.id/p/kerja-sama.html</a>"
+			]
+		},
+		{
+			"tag": "kontak_bna",
+			"input_patterns": [
+				"Sosial Media Humas Banda Aceh",
+				"Sosmed",
+				"SocMed",
+				"Media Sosialnya",
+				"alamat",
+				"email",
+				"surel",
+				"info kontak"
+			],
+			"responses": [
+				"Instagram : <a href='https://www.instagram.com/humasbna/' target='_blank'>Humas Kota Banda Aceh</a><br>Facebook : <a href='https://www.facebook.com/humaspemkobandaaceh/' target='_blank'>Pemko Banda Aceh</a><br>Twitter : <a href='https://twitter.com/humasbna' target='_blank'>Pemko Banda Aceh</a><br>Telepon/Fax : (0651)26184 / (0651)31980<br>Email : humas@bandaacehkota.go.id<br>Alamat : Jl. Tgk. Abu Lam U No.7, Banda Aceh 23242"
+			]
+		},
+		{
+			"tag": "demografi_bna",
+			"input_patterns": [
+				"Demografi Banda Aceh",
+				"demografi",
+				"demografi bna",
+				"Saya ingin tahu Demografinya"
+			],
+			"responses": [
+				"Jumlah Penduduk : 259.913 Jiwa<br>Laju Pertumbuhan Penduduk : 1.96%"
+			]
+		},
+		{
+			"tag": "pad_bna",
+			"input_patterns": [
+				"PAD Banda Aceh",
+				"Pendapatan BAnda Aceh",
+				"Saya mau tau PAD BAnda",
+				"Pendapatan Asli Daerah Banda Aceh"
+			],
+			"responses": [
+				"Capaian penerimaan PAD Kota Banda Aceh tahun 2017 sebanyak 96,19% dengan target penerimaan PAD Kota Banda Aceh sebanyak Rp.280.877.031.733, dan realisasi penerimaan sebanyak Rp. 270.170.805.366,-.<br>Penerimaan zakat, infaq, dan shadaqah pada Baitul Mal Kota Banda Aceh tahun 2017 mencapai Rp.14.639.943.516,- dan penyaluran sebanyak Rp. 19.563.132.341,- pada 11.531 orang"
+			]
+		},
+		{
+			"tag": "visi_misi_bna",
+			"input_patterns": [
+				"Visi Misi Banda Aceh",
+				"Jelaskan Visi banda aceh",
+				"apa visinya banda aceh",
+				"misi kota banda aceh"
+			],
+			"responses": [
+				"<strong>Visi Kota Banda Aceh</strong> yaitu \"Terwujudnya Kota Banda Aceh gemilang dalam bingkai syariah\"dan<br><strong>Misi Kota Banda Aceh</strong> yaitu :<br>1. Meningkatkan pelaksanaan syariat islam dalam bidang penguatan aqidah, syariah dan akhlak<br>2. Meningkatkan kualitas pendidikan, kebudayaan, kepemudaan dan olahraga<br>3. Meningkatkan pertumbuhan ekonomi, pariwisata dan kesejahteraan masyarakat<br>4. Meningkatkan kualitas kesehatan masyarakat<br>5. Meningkatkan kualitas tata kelola pemerintahan yang baik<br>6. Membangun infrastruktur kota yang ramah lingkungan dan berkelanjutan<br>7. Memperkuat upaya pemberdayaan perempuan dan perlindungan anak"
+			]
+		},
+		{
+			"tag": "bna",
+			"input_patterns": [
+				"Banda Aceh",
+				"Kota Banda Aceh",
+				"Saya mau tau Banda Aceh",
+				"Jelaskan Banda Aceh"
+			],
+			"responses": [
+				"Silahkan baca lebih lanjut di link berikut :<a href='https://id.wikipedia.org/wiki/Kota_Banda_Aceh' target='_blank'>https://id.wikipedia.org/wiki/Kota_Banda_Aceh</a>"
+			]
+		},
+		{
+			"tag": "sejarah_bna",
+			"input_patterns": [
+				"Sejarah Kota Banda Aceh",
+				"Sejarah mandasyeh",
+				"Saya mau tau sejarah",
+				"Jelaskan sejarah Banda Aceh",
+				"Banda Aceh zaman dulu",
+				"Banda Aceh tempo dulu",
+				"Banda aceh dulunya",
+				"Banda Aceh Jadul"
+			],
+			"responses": [
+				"Bandar Aceh Darussalam adalah merupakan ibu kota Kerajaan Aceh Darussalam yang dibangun oleh Sultan Johan Syah pada hari Jumat, tanggal 1 Ramadhan 601 H (22 April 1205 M)",
+				"Kerajaan Aceh mencapai puncak kejayaan saat dipimpin oleh Sultan Iskandar Muda (1607-1636), yang merupakan tokoh legendaris dalam sejarah Aceh",
+				"Kota Banda Aceh telah berusia 813 tahun dan merupakan salah satu kota islam tertua di Asia Tenggara",
+				"Di masa jayanya, Bandar Aceh Darussalam merupakan pusat pendidikan islam yang dikunjungi oleh banyak pelajar dari seluruh dunia",
+				"Banda Aceh dulu merupakan pusat perdagangan yang dikunjungi oleh para pedagang dari seluruh dunia termasuk dari Arab, Turki, China, Eropa, dan India"
+			]
+		},
+		{
+			"tag": "prestasi_bna",
+			"input_patterns": [
+				"Prestasi Banda Aceh",
+				"Jelaskan prestasi Banda Aceh!",
+				"Sebutkan prestasi Banda",
+				"Apa saja prestasinya?",
+				"Prestasi"
+			],
+			"responses": [
+				"Banda Aceh telah meraih berbagai macam Prestasi :<br>1. Walikota Entrepreneur Award dari Kemenko dan UKM RI tahun 2018<br>2. WTP dari BPK RI tahun 2018<br>3. Anugerah Kebudayaan dari Kemendikbud RI 2017<br>4. Anugerah KASN dari KASN 2018<br>5. Aceh Investment Award dari Pemerintah Aceh 2017<br>6. Piala Adupura 2017 dan lainnya<br><br>Prestasi lainnya dapat dibaca pada situs web Banda Aceh Berikut : <a href='https://bandaacehkota.go.id/p/prestasi.html' target='_blank'>https://bandaacehkota.go.id/p/prestasi.html</a>"
+			]
+		},
+		{
+			"tag": "program_unggulan_bna",
+			"input_patterns": [
+				"Program Unggulan Banda Aceh",
+				"Informasi Program Unggulan",
+				"Banda Aceh Unggulan"
+			],
+			"responses": [
+				"Program Unggulan Kota Banda Aceh ada pada link berikut ini :<a href='https://bandaacehkota.go.id/p/program-unggulan.html' target='_blank'>https://bandaacehkota.go.id/p/program-unggulan.html</a>"
+			]
+		},
+		{
+			"tag": "rumah_ibadah_bna",
+			"input_patterns": [
+				"Informasi mengenai agama di Banda Aceh",
+				"Keagamaan Banda Aceh",
+				"Pemeluk Agama",
+				"Jumlah pemeluk islam",
+				"pemeluk kristen",
+				"pemeluk hindu",
+				"pemeluk budha"
+			],
+			"responses": [
+				"Masyarakat Kota Banda Aceh mayoritas pemeluk agama Islam, namun di kota ini juga berkembang agama lainnya, seperti Kristen, Hindu, Budha dan lainnya yang hidup berdampingan dengan Muslim.<br>Berikut Jumlah pemeluk agama di Kota Banda Aceh :<br>1. Islam, 222.582 Jiwa<br>2. Protestan, 717 Jiwa<br>3. Katolik, 538 Jiwa<br>4. Hindu, 39 jiwa<br>5. Budha, 2755 jiwa"
+			]
+		},
+		{
+			"tag": "website_bna",
+			"input_patterns": [
+				"Website Banda Aceh",
+				"Situs web Banda Aceh",
+				"Situs Banda Aceh",
+				"web Banda Aceh"
+			],
+			"responses": [
+				"Silahkan akses ke <a href='https://bandaacehkota.go.id/' target='_blank'>https://bandaacehkota.go.id/</a>"
+			]
+		},
+		{
+			"tag": "geografi_bna",
+			"input_patterns": [
+				"Geografi Banda Aceh",
+				"Lokasi Banda Aceh",
+				"Jelaskan Geografi Mandasyeh",
+				"Saya ingin tahu Geografi Banda Aceh!",
+				"Luas kota banda aceh"
+			],
+			"responses": [
+				"Banda Aceh berada di 05°30’- 05°35’ LU dan 95°30’-99°16’ BT<br>Terdiri dari 9 kecamatan, 90 Gampong<br>Luas wilayah Kota Banda Aceh adalah 59,002 km persegi<br>Perbatasan Utara dengan Selat Malaka, Perbatasan Selatan dengan Kecamatan Darul Imarah dan Kecamatan Ingin Jaya Kabupaten Aceh Besar, Perbatasan Barat dengan Kecamatan Peukan Bada Kabupaten Aceh Besar, dan Perbatasan Timur dengan Kecamatan Krueng Barona Jaya dan Kecamatan Darussalam Kabupaten Aceh Besar"
+			]
+		},
+		{
+			"tag": "geologi_bna",
+			"input_patterns": [
+				"Geologi Banda Aceh",
+				"Jelaskan Geologi Bna",
+				"Saya ingin tahu geologinya",
+				"geologi"
+			],
+			"responses": [
+				"Pulau Sumatera dilalui oleh patahan aktif yang memanjang dari Banda Aceh di utara hingga Lampung di selatan, yang dikenal sebagai Sesar Semangko (Semangko Fault). Patahan ini bergeser sekitar 11 cm/tahun dan merupakan daerah rawan gempa dan longsor",
+				"Kota Banda Aceh diapit oleh dua patahan di Barat dan Timur kota, yaitu patahan Darul Imarah dan Darussalam, dan kedua patahan yang merupakan sesar aktif tersebut diperkirakan bertemu pada pegunungan di Tenggara Kota",
+				"Banda Aceh adalah suatu daratan hasil ambalasan sejak Pilosen, membentuk suatu Graben, sehingga dataran Banda Aceh ini merupakan batuan sedimen yang berpengaruh kuat apabila terjadi gempa di sekitarnya",
+				"Kota Banda Aceh juga berada pada pertemuan Plate Euroasia dan Australia berjarak ±130 km dari garis pantai barat sehingga daerah ini rawan terhadap Tsunami",
+				"Litologi Kota Banda Aceh merupakan susunan batuan yang kompleks, terdiri dari batuan sedimen, meta sedimen, batu gamping, batuan hasil letusan gunung api, endapan alluvium, dan intrusi batuan beku, berumur holosen hingga Pra-Tersier"
+			]
+		},
+		{
+			"tag": "hidrologi_bna",
+			"input_patterns": [
+				"Hidrologi Banda Aceh",
+				"Jelaskan Hidrologi Bna",
+				"Saya ingin tahu hidrologinya",
+				"hidrologi",
+				"Kondisi air Banda Aceh",
+				"Perairan"
+			],
+			"responses": [
+				"Terdapat 7 (tujuh) sungai yang melalui Kota Banda Aceh yang berfungsi sebagai daerah aliran sungai dan sumber air baku, kegiatan perikanan, dan sebagainya",
+				"Wilayah Kota Banda Aceh memiliki air tanah yang bersifat asin, payau dan tawar",
+				"Daerah dengan air tanah asin terdapat pada bagian utara dan timur kota sampai ke tengah kota. Air payau berada di bagian tengah kota membujur dari timur ke barat. Sedangkan wilayah yang memiliki air tanah tawar berada di bagian selatan kota membentang dari Kecamatan Baiturrahman sampai Kecamatan Jaya Baru, yang juga mencakup Kecamatan Lueng Bata, Ulee Kareng, Banda Raya"
+			]
+		},
+		{
+			"tag": "klimatologi_bna",
+			"input_patterns": [
+				"Klimatologi Banda Aceh",
+				"Jelaskan Klimatologi Bna",
+				"Saya ingin tahu klimatologinya",
+				"klimatologi",
+				"Cuaca Banda Aceh"
+			],
+			"responses": [
+				"Berdasarkan data klimatologi untuk wilayah Kota Banda Aceh yang diperoleh dari Stasiun Meteorologi dan Geofisika Indrapuri di tahun 2017 menunjukkan bahwa, suhu udara rata - rata bulanan berkisar antara 26 C dengan suhu maksimal 34 C dan minimal 22, 4 C dengan tekanan udara(minibar) rata - rata 1012, 617(mb)",
+				"Curah hujan kota Banda Aceh terbesar pada tahun 2017 terjadi pada bulan Januari yaitu sebesar 259 mm dan terkecil terjadi pada bulan April sebesar 15 mm. Jumlah curah hujan ini selama tahun 2017 yaitu sebesar 1146 mm, dengan rata-rata per bulannya sebesar 99.5 mm/bulan",
+				"Kelembaban udara rata-rata per bulan dalam satu tahun yaitu 82%"
+			]
+		},
+		{
+			"tag": "smart_city",
+			"input_patterns": [
+				"Apa itu Smart CIty Banda Aceh",
+				"Smart City?",
+				"Smart City Banda Aceh",
+				"Jelaskan Banda Smart"
+			],
+			"responses": [
+				"Kota yang Smart merupakan sebuah cara untuk membentuk Kota Banda Aceh menjadi sebuah kota yang layak huni dengan penyediaan fasilitas umum yang memadai agar mampu memberikan berbagai kemudahan dan meningkatkan kesejahteraan serta kenyamanan bagi Masyarakat Banda Aceh",
+				"Dengan identitas Banda Aceh sebagai kota Smart yang islami yang menjadikan sebuah keunikan dan nilai tambah sendiri bagi Kota Banda Aceh",
+				""
+			]
+		},
+		{
+			"tag": "laproker_scbna",
+			"input_patterns": [
+				"Laporan Program Kerja Smart City",
+				"Laporan Program Kerja Banda Aceh Smart City"
+			],
+			"responses": [
+				"Laporan Program Kerja Banda Aceh Smart City bisa diakses pada link berikut :<a href='https://smartcity.bandaacehkota.go.id/laporan' target='_blank'>Laporan Program Kerja</a>"
+			]
+		},
+		{
+			"tag": "dimensi_scbna",
+			"input_patterns": [
+				"Sebutkan dimensi smart city Banda Aceh",
+				"Smart City BAnda Aceh",
+				"smart city",
+				"Dimensi smart city",
+				"6 Dimensi"
+			],
+			"responses": [
+				"Ada 6 Dimensi Smart City Banda Aceh :<br>1. Smart Governance<br>2. Smart Branding<br>3. Smart Economy<br>4. Smart Living<br>5. Smart Society<br>6. Smart Environment"
+			]
+		},
+		{
+			"tag": "visimisi_scbna",
+			"input_patterns": [
+				"Jelaskan Visi dan Misi Banda Aceh Smart City",
+				"Saya ingin tahu visi misi Smart CIty!",
+				"Visi Misi Banda Aceh Smart City"
+			],
+			"responses": [
+				"Visi Banda Aceh Smart City : \"Menjadi Kota Pintar Islami yang Inovatif dan Kompetitif\"<br>dan Misi Banda Aceh Smart City :<br>1. Mewujudkan tata kelola pemerintahan yang efektif, efisien, transparan, partisipatif, dan komunikatif (Smart Governance)<br>2. Mewujudkan Kota Banda Aceh untuk berinovasi dengan menguatkan identitas Kota Banda Aceh menjadi pusat wisata islami dunia yang cerdas dan berbudaya (Smart Branding)<br>3. Meningkatkan pertumbuhan ekonomi, dan kesejahteraan masyarakat dengan mewujudkan penataan di sektor industri dan ekonomi Syariah (Smart Economy)<br>4. Mewujudkan ekosistem perkotaan yang maju dengan sarana dan prasarana publik yang berkualitas dan terintegrasi dengan masyarakat yang sehat, toleran serta memiliki rasa kebersamaan yang kuat (Smart Living)<br>5. Mewujudkan masyarakat yang kreatif, berdaya saing dan mampu menjaga keamanan lingkungannya (Smart Society)<br>6. Mewujudkan Kota Banda Aceh Menjadi Kota yang ramah lingkungan, hijau, bersih, tangguh, dan berkelanjutan (Smart Environment)"
+			]
+		},
+		{
+			"tag": "smart_governance",
+			"input_patterns": [
+				"Apa itu Smart Governance?",
+				"Apa yang dimaksud dengan Smart Governance",
+				"Smart Governance",
+				"Saya ingin tahu Smart Governance"
+			],
+			"responses": [
+				"Smart Governance merupakan dimensi pembangunan untuk menciptakan tata kelola pemerintahan Kota Banda Aceh yang dilaksanakan secara pintar, sehingga Smart Governance dalam dimensi Smart City merupakan gambaran pemerintahan yang memberikan layanan publik yang efisien dan berkualitas kepada masyarakat, memantau pembangunan dan meningkatkan partisipasi warga dalam proses pembangunan",
+				"Smart Governance terdiri dari tiga sub pilar berikut :<br>1. Public Service, yaitu meningkatkan layanan publik<br>2. Bureaucracy, yaitu meningkatkan kinerja birokrasi<br>3. Public Policy, yaitu peningkatan efisiensi kebijakan publik",
+				"Smart Governance lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/1' target='_blank'>Smart Governance</a>"
+			]
+		},
+		{
+			"tag": "smart_branding",
+			"input_patterns": [
+				"Apa itu Smart Branding?",
+				"Apa yang dimaksud dengan Smart Branding",
+				"Smart Branding",
+				"Saya ingin tahu Smart Branding"
+			],
+			"responses": [
+				"Smart Branding merupakan dimensi pembangunan Smart City yang fokus dalam meningkatkan daya saing Kota Banda Aceh dan memasarkan potensi kota dalam lingkup lokal, nasional, maupun internasional",
+				"Pemasaran potensi kota Banda Aceh ini diharapkan dapat mendorong aktivitas perekonomian dan pada akhirnya meningkatkan kesejahteraan masyarakat",
+				"Smart Branding terdiri dari tiga sub pilar berikut:<br>1. Tourism, yaitu membangun ekosistem pariwisata<br>2.Business, yaitu membangun daya saing bisnis(industri kreatif)<br>3.Appeareance, yaitu penataan wajah daerah",
+				"Smart Branding lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/2' target='_blank'>Smart Branding</a>"
+			]
+		},
+		{
+			"tag": "smart_economy",
+			"input_patterns": [
+				"Apa itu Smart Economy?",
+				"Apa yang dimaksud dengan Smart Economy",
+				"Smart Economy",
+				"Saya ingin tahu Smart Economy"
+			],
+			"responses": [
+				"Smart Economy merupakan pembangunan tata kelola perekonomian yang mampu menghadapi tantangan dan adaptif terhadap perubahan sehingga terwujudnya ekosistem yang mendukung aktivitas ekonomi masyakat yang selaras dengan sektor ekonomi unggulan daerah",
+				"Dengan adanya Smart Economy, diharapkan pertumbuhan ekonomi dapat ditunjang secara efektif dan efisien serta berkelanjutan dalam meningkatkan kesejahteraan masyarakat",
+				"Smart Economy terdiri dari tiga sub pilar berikut :<br>1. Industry: penataan industri primer, sekunder dan tersier<br>2. Welfare: peningkatan kesejahteraan masyarakat<br>3. Transaction: membangun ekosistem keuangan",
+				"Smart Economy lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/3' target='_blank'>Smart Economy</a>"
+			]
+		},
+		{
+			"tag": "smart_living",
+			"input_patterns": [
+				"Apa itu Smart Living?",
+				"Apa yang dimaksud dengan Smart Living",
+				"Smart Living",
+				"Saya ingin tahu Smart Living"
+			],
+			"responses": [
+				"Smart Living merupakan dimensi pembangunan tata kelola kelayakan taraf hidup masyarakat Kota Banda Aceh sehingga mewujudkan lingkungan tempat tinggal yang layak, nyaman, dan efisien bagi masyarakat",
+				"Smart Living terdiri dari tiga sub pilar berikut :<br>1. Harmony, yaitu harmonisasi tata ruang dan lingkungan yang nyaman<br>2. Health, yaitu menjamin fasilitas dan pelayanan kesehatan<br>3. Mobility, yaitu membangun sarana transportasi dan logistik",
+				"Smart Living lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/4' target='_blank'>Smart Living</a>"
+			]
+		},
+		{
+			"tag": "smart_society",
+			"input_patterns": [
+				"Apa itu Smart Society?",
+				"Apa yang dimaksud dengan Smart Society",
+				"Smart Society",
+				"Saya ingin tahu Smart Society"
+			],
+			"responses": [
+				"Smart Society merupakan dimensi pembangunan tata kelola ekosistem masyarakat yang humanis dan dinamis, baik antar individu, antara individu dengan kelompok, ataupun antara kelompok dengan kelompok",
+				"Dengan adanya Smart Society, Interaksi masyarakat diharapkan terjalin intensif sehingga membentuk sebuah tatanan yang produktif secara positif dengan digital literasi yang baik",
+				"Smart Society terdiri dari tiga sub pilar berikut:<br>1. Community, yaitu membangun masyarakat yang pintar<br>2. Learning, yaitu membangun sistem edukasi yang efisien<br>3. Security, yaitu menjamin keamanan dan keselamatan",
+				"Smart Society lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/5' target='_blank'>Smart Society</a>"
+			]
+		},
+		{
+			"tag": "smart_environment",
+			"input_patterns": [
+				"Apa itu Smart Environment?",
+				"Apa yang dimaksud dengan Smart Environment",
+				"Smart Environment",
+				"Saya ingin tahu Smart Environment"
+			],
+			"responses": [
+				"Smart Environment merupakan dimensi pembangunan tata kelola lingkungan yang pintar",
+				"Smart Environment yaitu di mana pembangunan sarana dan prasarana bagi masyarakat berorientasi pada lingkungan hidup, sehingga terwujud tata kelola lingkungan yang baik, bertanggung-jawab, dan berkelanjutan",
+				"Smart Environment terdiri dari tiga sub pilar berikut :<br>1. Protection, yaitu perlindungan lingkungan<br>2. Waste, yaitu tata kelola sampah dan limbah<br>3. Energy, yaitu membangun tata kelola energi yang bertanggung jawab dan berkelanjutan",
+				"Smart Environment lebih lengkap dapat dibaca di <a href='https://smartcity.bandaacehkota.go.id/dimensi/6' target='_blank'>Smart Environment</a>"
+			]
+		},
+		{
+			"tag": "website_scbna",
+			"input_patterns": [
+				"Website Smart City Banda Aceh",
+				"Situs web Smart city Bna",
+				"Situs web Banda Aceh Smart City",
+				"Situs Smart City",
+				"Web Smart city"
+			],
+			"responses": [
+				"Silahkan akses ke <a href='https://smartcity.bandaacehkota.go.id' target='_blank'>https://smartcity.bandaacehkota.go.id</a>"
+			]
+		},
+		{
+			"tag": "cp_scbna",
+			"input_patterns": [
+				"Hubungi Smart City",
+				"Contact Person Smart City",
+				"CP pengelola smart city",
+				"Alamat pengelola Smart City"
+			],
+			"responses": [
+				"Silahkan hubungi smart city di <br>Telepon : (0651) 7551641<br>Fax : (0651) 7557269<br>Email : diskominfotik@bandaacehkota.go.id<br>Alamat : Jl. T. Nyak Arief No. 130 Banda Aceh, 23115"
+			]
+		},
+		{
+			"tag": "masukan_scbna",
+			"input_patterns": [
+				"Kritik Masukan Saran",
+				"Dimana saya bisa memberikan masukan smart city",
+				"Masukan dari masyarakat Smart City",
+				"Kontribusi Masyarakat Smart City",
+				"Saya ingin memberikan kritik dan saran Smart City"
+			],
+			"responses": [
+				"Wah boleh ni. Untuk kritik, saran, dan masukan silahkan akses ke <a href='https://smartcity.bandaacehkota.go.id/kontribusi' target='_blank'>https://smartcity.bandaacehkota.go.id/kontribusi</a>"
+			]
+		},
+		{
+			"tag": "rencana_aksi",
+			"input_patterns": [
+				"Rencana Aksi Smart City BAnda Aceh",
+				"Apa itu rencana aksi?",
+				"JElaskan rencana aksi kota ini!"
+			],
+			"responses": [
+				"Rencana aksi Smart City merupakan langkah awal dari suatu upaya perubahan yang sistematik",
+				"Rencana Aksi smart City berawal dari masalah yang jelas dan spesifik sehingga diharapkan mampu menciptakan rencana-rencana yang memiliki tolak ukur keberhasilan yang pasti",
+				"Rencana aksi Smart City Banda Aceh disusun dengan menggunakan prinsip:<br>1. Specific (spesifik)<br>2. Measureable (terukur)<br>3. Achievable (dapat dicapai)<br>4. Realistic (realistik)<br>5. Timebound (batas waktu)",
+				"Rencana aksi Smart City dibagi dalam 4 (empat) Rencana, yaitu:<br>1. Pengembangan kebijaksanaan dan kelembagaan Smart City Banda Aceh<br>2. Rencana pembangunan infrastruktur pendukung Smart City Banda Aceh<br>3. Rencana pengembangan aplikasi dan perangkat lunak pendukung Smart City Banda Aceh<br>4. Rencana penguatan literasi Smart City Banda Aceh"
+			]
+		},
+		{
+			"tag": "peta_pembangunan_smart_city",
+			"input_patterns": [
+				"Peta Jalan Pembangunan Smart City",
+				"Peta Implementasi Smart City",
+				"Jelaskan PEta Implementasi Smart City!",
+				"Road Map Smart City"
+			],
+			"responses": [
+				"Peta Jalan Implementasi program pembangunan Smart City merupakan langkah-langkah yang harus dilakukan oleh pemerintah Kota Banda Aceh dalam mewujudkan Masterplan Smart City menjadi pelaksanaan pembangunan",
+				"Peta jalan pembangunan Smart City terbagi dalam 3 (tiga) tahapan, yaitu :<br>1. Pembangunan Jangka Pendek yaitu perencanaan pembangunan Smart City dalam jangka waktu 1 (satu) tahun kedepan<br>2. Pembangunan Jangka Menengah yaitu perencanaan pembangunan Smart City dalam jangka waktu 5 (lima) tahun kedepan<br>3. Pembangunan Jangka Panjang yaitu perencanaan pembangunan Smart City dalam jangka waktu 10 (sepuluh) tahun kedepan"
+			]
+		},
+		{
+			"tag": "sekdew_scbna",
+			"input_patterns": [
+				"Siapa Sekretaris Dewan Smart City?",
+				"SekDew Smart City BAnda Aceh",
+				"Sekretaris Dewan Smart City Banda Aceh"
+			],
+			"responses": ["Sekretaris Dewan Smart City yaitu Ir. Bahagia, Dpl., SE."]
+		},
+		{
+			"tag": "web_diskominfotik_bna",
+			"input_patterns": [
+				"Situs Web Kominfo",
+				"Website Diskominfotik",
+				"Web Diskominfotik",
+				"Web kominfo",
+				"web diskominfo",
+				"situs diskominfo",
+				"situs web diskominfo",
+				"situs web diskominfotik"
+			],
+			"responses": [
+				"Silahkan akses ke situs <a href='http://diskominfo.bandaacehkota.go.id/' target='_blank'>http://diskominfo.bandaacehkota.go.id/</a>"
+			]
+		},
+		{
+			"tag": "aduan_konten_neg",
+			"input_patterns": [
+				"Aduan Konten Negatif",
+				"Saya ingin mengadu konten negatif",
+				"konten buruk porno dan sebagainya"
+			],
+			"responses": [
+				"Silahkan Anda mengadu terhadap konten negatif yang Anda temui ke Situs berikut <a href='https://aduankonten.id/' target='_blank'>https://aduankonten.id/</a>"
+			]
+		},
+		{
+			"tag": "ppid_bna",
+			"input_patterns": ["Pejabat Pengelola Informasi dan Dokumentasi", "PPID"],
+			"responses": [
+				"Informasi lebih lanjut mengenai PPID Kota Banda Aceh dapat diakses melalui <a href='http://ppid.bandaacehkota.go.id/' target='_blank'>http://ppid.bandaacehkota.go.id/</a>"
+			]
+		},
+		{
+			"tag": "lpse_bna",
+			"input_patterns": [
+				"Layanan Pengadaan Secara Elektronik Banda Aceh",
+				"Saya ingin melakukan tender",
+				"Pengadaan Barang Pemerintah"
+			],
+			"responses": [
+				"Tender Barang Pemerintah melalui LPSE dapat diakses di <a href='https://lpse.bandaacehkota.go.id/eproc4/' target='_blank'>https://lpse.bandaacehkota.go.id/eproc4/</a>"
+			]
+		},
+		{
+			"tag": "jdih_bna",
+			"input_patterns": [
+				"Jaringan Dokumentasi dan Informasi Hukum Pemerintah Kota Banda Aceh",
+				"JDIH Banda Aceh"
+			],
+			"responses": [
+				"Informasi tentang JDIH Kota Banda Aceh dapat Anda temui di situs berikut <a href='http://jdih.bandaacehkota.go.id/' target='_blank'>http://jdih.bandaacehkota.go.id/</a>"
+			]
+		},
+		{
+			"tag": "cp_kominfotik_bna",
+			"input_patterns": [
+				"Contact Person Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh",
+				"Hubungi Diskominfotik Banda Aceh",
+				"Telepon Diskominfotik",
+				"Email Diskominfotik",
+				"Alamat Diskominfotik Banda Aceh"
+			],
+			"responses": [
+				"Hubungi Diskominfotik Banda Aceh melalui :<br>Telepon : (0651) 7551641<br>Fax : (0651) 7557269<br>Email : diskominfotik@bandaacehkota.go.id <br>dan Alamat : Jl. T. Nyak Arief No. 130 Banda Aceh, 23115"
+			]
+		},
+		{
+			"tag": "forum_diskusi",
+			"input_patterns": [
+				"Forum Diskusi Diskominfotik Kota Banda Aceh",
+				"Tanya Jawab Diskominfotik"
+			],
+			"responses": [
+				"Silahkan berdiskusi melalui <a href='http://diskominfo.bandaacehkota.go.id/forum-diskusi/' target='_blank'>http://diskominfo.bandaacehkota.go.id/forum-diskusi/</a>"
+			]
+		},
+		{
+			"tag": "domain_hosting",
+			"input_patterns": [
+				"Permohonan Hosting dan Subdomain",
+				"Saya ingin memohon hosting",
+				"Prosedur hosting dan subdomain",
+				"Reset password hosting"
+			],
+			"responses": [
+				"Informasi tentang prosedur Hosting dan Domain dapat dibaca di <a href='http://diskominfo.bandaacehkota.go.id/permohonan-hosting-dan-subdomain/' target='_blank'>http://diskominfo.bandaacehkota.go.id/permohonan-hosting-dan-subdomain/</a>"
+			]
+		},
+		{
+			"tag": "peta_jaringan_fo_bna",
+			"input_patterns": [
+				"Peta Jaringan Telekomunikasi Fiber Optik Banda Aceh",
+				"Peta FO Banda Aceh",
+				"Jaringan FO Banda Aceh"
+			],
+			"responses": [
+				"Peta Jaringan FO terakhir dapat dilihat di <a href='http://diskominfo.bandaacehkota.go.id/peta-jaringan-fo/' target='_blank'>http://diskominfo.bandaacehkota.go.id/peta-jaringan-fo/</a>"
+			]
+		},
+		{
+			"tag": "download_dokumen",
+			"input_patterns": [
+				"Saya memerlukan Dokumen Peraturan Walikota",
+				"Dokumen Renstra Sekretariat Kota Banda Aceh",
+				"Dokumen Restra Diskominfotik Banda Aceh",
+				"Dokumen Kerangka Acuan Kerja",
+				"Dokumen Lakip",
+				"Dokumen Bahan Sakip",
+				"Dokumen Bidang E-Government",
+				"Dokumen Bidang Hubungan Media dan Penyelenggaraan Smart City",
+				"Dokumen Bidang Pengelolaan Informasi Publik",
+				"Dokumen Bidang Statistik",
+				"Dokumen DPA Diskominfotik",
+				"Dokumen IKU Diskominfotik",
+				"Dokumen Info Banda Aceh",
+				"Dokumen Kumpulan Berita Hoax",
+				"Dokumen LKJIP Diskominfotik",
+				"Dokumen Open Data - Publikasi",
+				"Dokumen Perjanjian Kinerja Diskominfotik",
+				"Dokumen Publikasi Buku Produk Sektoral 2017",
+				"Dokumen Publikasi Buku Produk Sektoral 2018",
+				"Dokumen Rencana Aksi Diskominfotik",
+				"Dokumen Renja Diskominfotik",
+				"Dokumen RKA Diskominfotik",
+				"Dokumen RKT Diskominfotik",
+				"Dokumen formulir-permohonan-RESET PASSWORD",
+				"Dokumen IT Master PLan Kota Banda Aceh 2010-2014"
+			],
+			"responses": [
+				"Dokumen-dokumen yang diperlukan dapat Anda unduh/download di situs berikut <a href='http://diskominfo.bandaacehkota.go.id/download/' target='_blank'>http://diskominfo.bandaacehkota.go.id/download/</a>"
+			]
+		},
+		{
+			"tag": "kadin_kominfotik_bna",
+			"input_patterns": [
+				"Kepala Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh",
+				"Kadin Kominfotik Banda Aceh",
+				"Nama Kadin Kominfotik",
+				"Siapa kadin kominfotik banda aceh"
+			],
+			"responses": [
+				"Kepala Dinas Komunikasi, Informatika, dan Statistik Kota Banda Aceh adalah Pak Bustami, SH"
+			]
+		},
+		{
+			"tag": "vismis_kominfotik_bna",
+			"input_patterns": [
+				"Visi dan Misi Dinas Kominfotik Banda Aceh",
+				"Visi Diskominfo",
+				"Misi Diskominfo Banda Aceh"
+			],
+			"responses": [
+				"Visi Diskominfotik Banda Aceh adalah \"Terwujudnya penyelenggaraan TIK menuju masyarakat Banda Aceh gemilang yang Islami\"<br>dan Misi Diskominfotik Banda Aceh :<br>1. Meningkatkan Kapasitas SDM bidang Teknologi Komunikasi dan Informatika<br>2. Meningkatkan sarana, prasarana komunikasi dan informatika<br>3. Menyediakan data statistik yang  berkualitas dan  terintegrasi<br>4. Membangun sistim aplikasi SKPD  yang berkualitas dan terintegrasi<br>5. Menjadikan data sebagai sumber berita dan informasi<br>6. Meningkatkan kualitas layanan publik yang profesional berbasis TIK"
+			]
+		},
+		{
+			"tag": "regulasi_daerah_bna",
+			"input_patterns": [
+				"Regulasi Daerah Kota Banda Aceh",
+				"Perda Peraturan Daerah",
+				"Qanun",
+				"Perwal Peraturan Wilayah",
+				"MoU",
+				"Aturan Kota Banda Aceh",
+				"Peraturan Banda Aceh"
+			],
+			"responses": [
+				"Regulasi yang berlaku di Banda Aceh dapat diakses melalui <a href='http://diskominfo.bandaacehkota.go.id/regulasi-daerah/' target='_blank'>http://diskominfo.bandaacehkota.go.id/regulasi-daerah/</a>"
+			]
+		},
+		{
+			"tag": "bahasa_kasar",
+			"input_patterns": [
+				"Tolol",
+				"Bodoh sekali kamu",
+				"Taik",
+				"Eek lah",
+				"Pungo",
+				"Bangai",
+				"Puko",
+				"Gila",
+				"Anjing",
+				"Babi",
+				"bajeng"
+			],
+			"responses": ["Astaghfirullah, kasar sekali kamu ya! :("]
+		},
+		{
+			"tag": "percakapan",
+			"input_patterns": ["Hai Cantik", "Hai Ganteng", "Manis kamu"],
+			"responses": ["Hahaha, saya robotlah. Gak ada rupa :)"]
+		}
+	]
 }

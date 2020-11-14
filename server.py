@@ -7,28 +7,31 @@ import nltk
 import os
 import glob
 
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from flask import Flask, render_template, send_from_directory
 from flask_socketio import SocketIO, emit, send
 from tensorflow.keras.models import Sequential, load_model
 
-# folders = glob.glob("dataset/*.json")
-# for fol in folders:
-#     data_file = open(fol).read()
-# intents = json.loads(data_file)
 intents = json.loads(open('dataset/bandaaceh.json').read())
 model = load_model('model/model.h5')
 words = pickle.load(open('model/indo_words.pkl', 'rb'))
 classes = pickle.load(open('model/indo_classes.pkl', 'rb'))
 
+# Create stemmer
+stemmer = StemmerFactory().create_stemmer()
+
 
 def clean_up_sentence(sentence):
-    # tokenize the pattern - split words into array and stem each word - create short form for word
-    return [word.lower() for word in (nltk.word_tokenize(sentence))]
+    # case folding, stemming, and tokenization inputs from user
+    sentence = sentence.lower()
+    sentence = stemmer.stem(sentence)
+
+    return nltk.word_tokenize(sentence)
+
+
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
-
-
 def bow(sentence, words, show_details=True):
-    # tokenize the pattern
+    # tokenize the input_pattern
     sentence_words = clean_up_sentence(sentence)
     # bag of words - matrix of N words, vocabulary matrix
     bag = [0]*len(words)
@@ -101,6 +104,5 @@ def favicon():
 @socketio.on('send message')
 def handle_my_custom_event(data):
     resp = chatbot_response(str(data))
-    print("Server menerima input : " + str(data) +
-          "\nresp : " + resp)
+    # print("Server menerima input : " + str(data) + "\nresp : " + resp)
     emit('response message', resp)

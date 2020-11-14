@@ -7,31 +7,33 @@ import nltk
 import string
 import glob
 
-# from nltk.stem import WordNetLemmatizer
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
-
-nltk.download('punkt')
 
 # Load file
 words = []
 classes = []
 documents = []
 
-# folders = glob.glob("dataset/*.json")
-# for fol in folders:
-#     data_file = open(fol).read()
-
 data_file = open('dataset/bandaaceh.json').read()
 intents = json.loads(data_file)
 
+# Create stemmer
+stemmer = StemmerFactory().create_stemmer()
 
 # Preporcess data
 for intent in intents['intents']:
-    for pattern in intent['patterns']:
+    for pattern in intent['input_patterns']:
 
-        # tokenize word
+        # Case folding
+        pattern = pattern.lower()
+
+        # Stemming
+        pattern = stemmer.stem(pattern)
+
+        # Word tokenization
         w = nltk.word_tokenize(pattern)
         words.extend(w)
 
@@ -43,10 +45,8 @@ for intent in intents['intents']:
             classes.append(intent['tag'])
 
 
-words = [w.lower() for w in words if w not in string.punctuation]
+# Sort words and classes
 words = sorted(list(set(words)))
-
-# sort classes
 classes = sorted(list(set(classes)))
 
 print(len(documents), "documents")
@@ -57,7 +57,7 @@ pickle.dump(words, open('model/indo_words.pkl', 'wb'))
 pickle.dump(classes, open('model/indo_classes.pkl', 'wb'))
 
 
-# Create Data Training and Testing
+# Create Data Training and Testing (In vector shape of words and classes)
 training = []
 # create an empty array for our output
 output_empty = [0] * len(classes)
@@ -79,12 +79,12 @@ for doc in documents:
         output_row[classes.index(doc[1])] = 1
 
     training.append([bag, output_row])  # feature and it class in binary
-# print(training)
+
 
 # shuffle our features and turn into np.array
 random.shuffle(training)
 training = np.array(training)
-# create train and test lists. X - patterns, Y - intents
+# create train and test lists. X - input_patterns, Y - intents
 train_x = list(training[:, 0])  # feature from words vector
 train_y = list(training[:, 1])  # label for class/tag
 print("Training data created")
@@ -103,12 +103,12 @@ model.add(Dense(len(train_y[0]), activation='softmax'))
 model.summary()
 
 # Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy',
               optimizer=sgd, metrics=['accuracy'])
 
 # fitting and saving the model
 hist = model.fit(np.array(train_x), np.array(train_y),
-                 epochs=200, batch_size=5, verbose=1)
+                 epochs=1000, batch_size=5, verbose=1)
 model.save('model/model.h5', hist)
 print("model created")
