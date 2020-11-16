@@ -1,9 +1,9 @@
 __pycache__
-static/app.js
-gui_run.py
+app.js
 tes.py
 learn.py
 .vscode
 model (copy)
 model2
-dataset/kominfotikbna.json
+kominfotikbna.json
+jquery_vers.js
