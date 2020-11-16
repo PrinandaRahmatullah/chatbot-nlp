@@ -12,11 +12,12 @@
 				"Hi",
 				"Hai",
 				"P",
-				"tes"
+				"tes",
+				"hai kamu"
 			],
 			"responses": [
-				"Hai, Sahabat",
-				"Senang berjumpa kembali",
+				"Hai, Sahabat! Ada yang bisa dibantu?",
+				"Senang berjumpa kembali. Ada yang bisa dibantu?",
 				"Helo, ada yang bisa dibantu?"
 			]
 		},
@@ -48,19 +49,6 @@
 				"Terima Kasih sudah membantu"
 			],
 			"responses": ["Senang Membantu Anda!", "Kapan saja!", "Aman tu", "Sip"]
-		},
-		{
-			"tag": "kosong",
-			"input_patterns": [],
-			"responses": [
-				"Maaf, bisa tanyakan ulang?",
-				"Mohon tanyakan yang benar :D",
-				"Saya robot, tidak paham hati Anda hahaha",
-				"Mau Bertanya?",
-				"Tanya apa?",
-				"Tentang apa?",
-				"Apa yang Anda bicarakan?"
-			]
 		},
 		{
 			"tag": "pilihan",
@@ -227,7 +215,7 @@
 				"misi kota banda aceh"
 			],
 			"responses": [
-				"<strong>Visi Kota Banda Aceh</strong> yaitu \"Terwujudnya Kota Banda Aceh gemilang dalam bingkai syariah\"dan<br><strong>Misi Kota Banda Aceh</strong> yaitu :<br>1. Meningkatkan pelaksanaan syariat islam dalam bidang penguatan aqidah, syariah dan akhlak<br>2. Meningkatkan kualitas pendidikan, kebudayaan, kepemudaan dan olahraga<br>3. Meningkatkan pertumbuhan ekonomi, pariwisata dan kesejahteraan masyarakat<br>4. Meningkatkan kualitas kesehatan masyarakat<br>5. Meningkatkan kualitas tata kelola pemerintahan yang baik<br>6. Membangun infrastruktur kota yang ramah lingkungan dan berkelanjutan<br>7. Memperkuat upaya pemberdayaan perempuan dan perlindungan anak"
+				"<b>Visi Kota Banda Aceh</b> yaitu \"Terwujudnya Kota Banda Aceh gemilang dalam bingkai syariah\"<br>dan<b>Misi Kota Banda Aceh</b> yaitu :<br>1. Meningkatkan pelaksanaan syariat islam dalam bidang penguatan aqidah, syariah dan akhlak<br>2. Meningkatkan kualitas pendidikan, kebudayaan, kepemudaan dan olahraga<br>3. Meningkatkan pertumbuhan ekonomi, pariwisata dan kesejahteraan masyarakat<br>4. Meningkatkan kualitas kesehatan masyarakat<br>5. Meningkatkan kualitas tata kelola pemerintahan yang baik<br>6. Membangun infrastruktur kota yang ramah lingkungan dan berkelanjutan<br>7. Memperkuat upaya pemberdayaan perempuan dan perlindungan anak"
 			]
 		},
 		{
@@ -320,10 +308,11 @@
 				"Lokasi Banda Aceh",
 				"Jelaskan Geografi Mandasyeh",
 				"Saya ingin tahu Geografi Banda Aceh!",
-				"Luas kota banda aceh"
+				"Luas kota banda aceh",
+				"geografis"
 			],
 			"responses": [
-				"Banda Aceh berada di 05°30’- 05°35’ LU dan 95°30’-99°16’ BT<br>Terdiri dari 9 kecamatan, 90 Gampong<br>Luas wilayah Kota Banda Aceh adalah 59,002 km persegi<br>Perbatasan Utara dengan Selat Malaka, Perbatasan Selatan dengan Kecamatan Darul Imarah dan Kecamatan Ingin Jaya Kabupaten Aceh Besar, Perbatasan Barat dengan Kecamatan Peukan Bada Kabupaten Aceh Besar, dan Perbatasan Timur dengan Kecamatan Krueng Barona Jaya dan Kecamatan Darussalam Kabupaten Aceh Besar"
+				"Banda Aceh berada di 05°30’- 05°35’ LU dan 95°30’-99°16’ BT<br>Terdiri dari 9 kecamatan, 90 Gampong<br>Luas wilayah Kota Banda Aceh adalah 59,002 km persegi<br><br>Perbatasan Utara dengan Selat Malaka, Perbatasan Selatan dengan Kecamatan Darul Imarah dan Kecamatan Ingin Jaya Kabupaten Aceh Besar, Perbatasan Barat dengan Kecamatan Peukan Bada Kabupaten Aceh Besar, dan Perbatasan Timur dengan Kecamatan Krueng Barona Jaya dan Kecamatan Darussalam Kabupaten Aceh Besar"
 			]
 		},
 		{
@@ -401,10 +390,8 @@
 			"tag": "dimensi_scbna",
 			"input_patterns": [
 				"Sebutkan dimensi smart city Banda Aceh",
-				"Smart City BAnda Aceh",
-				"smart city",
 				"Dimensi smart city",
-				"6 Dimensi"
+				"Dimensi"
 			],
 			"responses": [
 				"Ada 6 Dimensi Smart City Banda Aceh :<br>1. Smart Governance<br>2. Smart Branding<br>3. Smart Economy<br>4. Smart Living<br>5. Smart Society<br>6. Smart Environment"

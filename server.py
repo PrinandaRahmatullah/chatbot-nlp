@@ -8,6 +8,7 @@ import os
 import glob
 
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 from flask import Flask, render_template, send_from_directory
 from flask_socketio import SocketIO, emit, send
 from tensorflow.keras.models import Sequential, load_model
@@ -17,16 +18,20 @@ model = load_model('model/model.h5')
 words = pickle.load(open('model/indo_words.pkl', 'rb'))
 classes = pickle.load(open('model/indo_classes.pkl', 'rb'))
 
-# Create stemmer
+# Create stemmer and stopwords
 stemmer = StemmerFactory().create_stemmer()
+stopwords = StopWordRemoverFactory().get_stop_words()
 
 
 def clean_up_sentence(sentence):
-    # case folding, stemming, and tokenization inputs from user
-    sentence = sentence.lower()
-    sentence = stemmer.stem(sentence)
+    # tokenization, case floding, filtering, and stemming inputs from user
+    sentence = nltk.word_tokenize(sentence)
+    sentence = [word.lower() for word in sentence]
+    sentence = [
+        word for word in sentence if word not in stopwords and word.isalpha() and word not in string.punctuation]
+    sentence = [stemmer.stem(word) for word in sentence]
 
-    return nltk.word_tokenize(sentence)
+    return sentence
 
 
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
