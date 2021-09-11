@@ -8,14 +8,14 @@ To implement Artificial Intelligence thing in public services for helping people
 
 ## Requirements
 Run this command on your Python 3.6++ environment:
-```bash
+```console
 pip install -r requirements.txt
 ```
 
 ## How to Train The Neural Network
 1. Activate the environment.
 2. Run this command:
-    ```python
+    ```console
     python model_training.py
     ```
 3. Model trained.
