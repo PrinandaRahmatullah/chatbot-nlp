@@ -8,19 +8,27 @@ To implement Artificial Intelligence thing in public services for helping people
 
 ## Requirements
 Run this command on your Python 3.6++ environment:
->pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Train The Neural Network
 1. Activate the environment.
 2. Run this command:
-    > python model_training.py
+    ```python
+    python model_training.py
+    ```
 3. Model trained.
 
 ## How to Run
 1. Run this command on your Linux terminal:
-    > export FLASK_APP=server.py FLASK_ENV=development
+    ```console
+    export FLASK_APP=server.py FLASK_ENV=development
+    ```
 2. Then to launch flask server, run this command:
-    > flask run
+    ```console
+    flask run
+    ```
 3. Flask server launched.
 4. Enjoyed.
 
