@@ -4,13 +4,14 @@ import numpy as np
 import random
 import nltk
 import string
-import glob
 
+from matplotlib import pyplot as plt
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Dense, Activation, Dropout
-from tensorflow.keras.optimizers import SGD
+
+# from tensorflow.keras.optimizers import SGD
 
 # Load file
 words = []
@@ -99,7 +100,9 @@ model.add(Dropout(0.5))
 model.add(Dense(len(y_train[0]), activation='softmax'))
 model.summary()
 
-# Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
+# Report of model
+
+# Compile model.
 # sgd = SGD(lr=0.0015, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy',
               optimizer="adam", metrics=['accuracy'])
