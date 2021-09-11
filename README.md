@@ -24,11 +24,11 @@ pip install -r requirements.txt
 ## How to Run
 1. Run this command on your Linux terminal:
     ```console
-    $ export FLASK_APP=server.py FLASK_ENV=development
+    export FLASK_APP=server.py FLASK_ENV=development
     ```
 2. Then to launch flask server, run this command:
     ```console
-    $ flask run
+    flask run
     ```
 3. Flask server launched.
 4. Enjoyed.
