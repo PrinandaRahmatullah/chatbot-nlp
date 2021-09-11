@@ -1,67 +1,67 @@
-absl-py @ file:///tmp/build/80754af9/absl-py_1603893106258/work
-aiohttp @ file:///tmp/build/80754af9/aiohttp_1602530294624/work
+absl-py==0.13.0
+aniso8601==9.0.1
 astunparse==1.6.3
-async-timeout==3.0.1
-attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
-autopep8==1.5.4
-blinker==1.4
-brotlipy==0.7.0
-cachetools @ file:///tmp/build/80754af9/cachetools_1596822027882/work
-certifi==2020.6.20
-cffi @ file:///tmp/build/80754af9/cffi_1600699146221/work
-chardet @ file:///tmp/build/80754af9/chardet_1605303185383/work
-click==7.1.2
-cryptography @ file:///tmp/build/80754af9/cryptography_1601046815590/work
-Flask==1.1.2
-Flask-SocketIO==4.3.1
-gast==0.3.3
-google-auth @ file:///tmp/build/80754af9/google-auth_1604100403705/work
-google-auth-oauthlib @ file:///tmp/build/80754af9/google-auth-oauthlib_1603929124518/work
+autopep8==1.5.7
+bidict==0.21.3
+cachetools==4.2.2
+certifi==2021.5.30
+charset-normalizer==2.0.4
+clang==5.0
+click==8.0.1
+cycler==0.10.0
+Flask==2.0.1
+Flask-RESTful==0.3.9
+Flask-SocketIO==4.3.2
+flatbuffers==1.12
+gast==0.4.0
+google-auth==1.35.0
+google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
-grpcio @ file:///tmp/build/80754af9/grpcio_1597424474635/work
-h5py @ file:///tmp/build/80754af9/h5py_1593454122442/work
-idna @ file:///tmp/build/80754af9/idna_1593446292537/work
-importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
-itsdangerous==1.1.0
-Jinja2==2.11.2
-joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
-Keras-Preprocessing==1.1.0
-Markdown @ file:///tmp/build/80754af9/markdown_1605111056890/work
-MarkupSafe==1.1.1
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-multidict @ file:///tmp/build/80754af9/multidict_1600456399709/work
-nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
-numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1603570489231/work
-oauthlib==3.1.0
-opt-einsum==3.1.0
-protobuf==3.13.0
+grpcio==1.39.0
+h5py==3.1.0
+idna==3.2
+itsdangerous==2.0.1
+Jinja2==3.0.1
+joblib==1.0.1
+keras==2.6.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.3.2
+Markdown==3.3.4
+MarkupSafe==2.0.1
+matplotlib==3.4.3
+mtcnn==0.1.1
+nltk==3.6.2
+numpy==1.19.5
+oauthlib==3.1.1
+opencv-python==4.5.3.56
+opt-einsum==3.3.0
+pandas==1.3.2
+Pillow==8.3.1
+protobuf==3.17.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycodestyle==2.6.0
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
-PyJWT==1.7.1
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
-PySocks @ file:///tmp/build/80754af9/pysocks_1605305779399/work
-python-engineio==3.13.2
-python-socketio==4.6.0
-regex @ file:///tmp/build/80754af9/regex_1602786672676/work
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+pycodestyle==2.7.0
+pyparsing==2.4.7
+python-dateutil==2.8.2
+python-engineio==3.14.2
+python-socketio==4.6.1
+pytz==2021.1
+regex==2021.8.28
+requests==2.26.0
 requests-oauthlib==1.3.0
-rsa @ file:///tmp/build/80754af9/rsa_1596998415516/work
+rsa==4.7.2
 Sastrawi==1.0.1
-scipy @ file:///tmp/build/80754af9/scipy_1597686649129/work
-six @ file:///tmp/build/80754af9/six_1605205327372/work
-tensorboard @ file:///home/builder/ktietz/conda/conda-bld/tensorboard_1604313476433/work/tmp_pip_dir
-tensorboard-plugin-wit==1.6.0
-tensorflow @ file:///home/builder/ktietz/conda/conda-bld/tensorflow-base_1597935779250/work/tensorflow_pkg/tensorflow-2.3.0-cp38-cp38-linux_x86_64.whl
-tensorflow-estimator @ file:///tmp/build/80754af9/tensorflow-estimator_1599136169057/work/whl_temp/tensorflow_estimator-2.3.0-py2.py3-none-any.whl
+scipy==1.7.1
+six==1.15.0
+tensorboard==2.6.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorflow-cpu==2.6.0
+tensorflow-estimator==2.6.0
 termcolor==1.1.0
 toml==0.10.2
-tqdm @ file:///tmp/build/80754af9/tqdm_1605303662894/work
-urllib3 @ file:///tmp/build/80754af9/urllib3_1603305693037/work
-Werkzeug==1.0.1
+tqdm==4.62.2
+typing-extensions==3.7.4.3
+urllib3==1.26.6
+Werkzeug==2.0.1
 wrapt==1.12.1
-yarl @ file:///tmp/build/80754af9/yarl_1602693007734/work
-zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
