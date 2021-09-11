@@ -22,16 +22,16 @@ pip install -r requirements.txt
 3. Model trained.
 
 ## How to Run
-1. Run this command on your Linux terminal:
+1. Activate the environment if not activated.
+2. Run this command on your Linux terminal:
     ```console
     export FLASK_APP=server.py FLASK_ENV=development
     ```
-2. Then to launch flask server, run this command:
+3. Then to launch flask server, run this command:
     ```console
     flask run
     ```
-3. Flask server launched.
-4. Enjoyed.
+4. Flask server launched.
 
 ## Note
-Feel free to fork this repository.
+Feel free and enjoy to fork this repository.
