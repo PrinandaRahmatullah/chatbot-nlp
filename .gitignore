@@ -1,9 +1,16 @@
 __pycache__
+.gitignore
+.ipynb_checkpoints
+.vscode
+
 app.js
+jquery_vers.js
 tes.py
 learn.py
-.vscode
-model (copy)
-model2
+AnalisisModel.ipynb
 kominfotikbna.json
-jquery_vers.js
+
+model2
+model (copy)
+modell
+images
